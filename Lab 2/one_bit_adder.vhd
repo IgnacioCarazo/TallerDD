@@ -10,7 +10,8 @@ end one_bit_adder;
 
 architecture behavior of one_bit_adder is
   begin
-  	Z <= A xor B xor Cin;
+  	Z <= (A xor B) xor Cin;
     Cout <= (A and B) or (B and Cin) or (Cin and A);
  
 end behavior;
+
