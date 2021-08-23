@@ -45,7 +45,7 @@ module bin2bcd(
         
         shift_register = shift_register<<1;
         
-         temp_tens = shift_register[11:8];
+        temp_tens = shift_register[11:8];
         temp_ones = shift_register[7:4];
         
         i=i+1;
