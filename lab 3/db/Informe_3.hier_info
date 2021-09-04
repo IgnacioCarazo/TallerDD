@@ -1,0 +1,1167 @@
+|ALU
+ALU_Code[0] => Mux0.IN16
+ALU_Code[0] => Mux1.IN15
+ALU_Code[0] => Mux2.IN15
+ALU_Code[0] => Mux3.IN15
+ALU_Code[0] => Mux4.IN15
+ALU_Code[0] => Mux5.IN15
+ALU_Code[0] => Mux6.IN15
+ALU_Code[0] => Mux7.IN16
+ALU_Code[0] => Mux8.IN19
+ALU_Code[1] => Mux0.IN15
+ALU_Code[1] => Mux1.IN14
+ALU_Code[1] => Mux2.IN14
+ALU_Code[1] => Mux3.IN14
+ALU_Code[1] => Mux4.IN14
+ALU_Code[1] => Mux5.IN14
+ALU_Code[1] => Mux6.IN14
+ALU_Code[1] => Mux7.IN15
+ALU_Code[1] => Mux8.IN18
+ALU_Code[2] => Mux0.IN14
+ALU_Code[2] => Mux1.IN13
+ALU_Code[2] => Mux2.IN13
+ALU_Code[2] => Mux3.IN13
+ALU_Code[2] => Mux4.IN13
+ALU_Code[2] => Mux5.IN13
+ALU_Code[2] => Mux6.IN13
+ALU_Code[2] => Mux7.IN14
+ALU_Code[2] => Mux8.IN17
+ALU_Code[3] => Mux0.IN13
+ALU_Code[3] => Mux1.IN12
+ALU_Code[3] => Mux2.IN12
+ALU_Code[3] => Mux3.IN12
+ALU_Code[3] => Mux4.IN12
+ALU_Code[3] => Mux5.IN12
+ALU_Code[3] => Mux6.IN12
+ALU_Code[3] => Mux7.IN13
+ALU_Code[3] => Mux8.IN16
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+B[0] => B[0].IN2
+B[1] => B[1].IN2
+B[2] => B[2].IN2
+B[3] => B[3].IN2
+B[4] => B[4].IN2
+B[5] => B[5].IN2
+B[6] => B[6].IN2
+B[7] => B[7].IN2
+ALU_Result[0] <= ALU_Result[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[1] <= ALU_Result[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[2] <= ALU_Result[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[3] <= ALU_Result[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[4] <= ALU_Result[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[5] <= ALU_Result[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[6] <= ALU_Result[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Result[7] <= ALU_Result[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tmp_adder[0] <= N_bit_adder:sumador.port2
+tmp_adder[1] <= N_bit_adder:sumador.port2
+tmp_adder[2] <= N_bit_adder:sumador.port2
+tmp_adder[3] <= N_bit_adder:sumador.port2
+tmp_adder[4] <= N_bit_adder:sumador.port2
+tmp_adder[5] <= N_bit_adder:sumador.port2
+tmp_adder[6] <= N_bit_adder:sumador.port2
+tmp_adder[7] <= N_bit_adder:sumador.port2
+tmp_substractor[0] <= N_bit_substractor:restador.port2
+tmp_substractor[1] <= N_bit_substractor:restador.port2
+tmp_substractor[2] <= N_bit_substractor:restador.port2
+tmp_substractor[3] <= N_bit_substractor:restador.port2
+tmp_substractor[4] <= N_bit_substractor:restador.port2
+tmp_substractor[5] <= N_bit_substractor:restador.port2
+tmp_substractor[6] <= N_bit_substractor:restador.port2
+tmp_substractor[7] <= N_bit_substractor:restador.port2
+flags[0] <= <GND>
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|ALU|N_bit_adder:sumador
+input1[0] => input1[0].IN1
+input1[1] => input1[1].IN1
+input1[2] => input1[2].IN1
+input1[3] => input1[3].IN1
+input1[4] => input1[4].IN1
+input1[5] => input1[5].IN1
+input1[6] => input1[6].IN1
+input1[7] => input1[7].IN1
+input1[8] => input1[8].IN1
+input1[9] => input1[9].IN1
+input1[10] => input1[10].IN1
+input1[11] => input1[11].IN1
+input1[12] => input1[12].IN1
+input1[13] => input1[13].IN1
+input1[14] => input1[14].IN1
+input1[15] => input1[15].IN1
+input1[16] => input1[16].IN1
+input1[17] => input1[17].IN1
+input1[18] => input1[18].IN1
+input1[19] => input1[19].IN1
+input1[20] => input1[20].IN1
+input1[21] => input1[21].IN1
+input1[22] => input1[22].IN1
+input1[23] => input1[23].IN1
+input1[24] => input1[24].IN1
+input1[25] => input1[25].IN1
+input1[26] => input1[26].IN1
+input1[27] => input1[27].IN1
+input1[28] => input1[28].IN1
+input1[29] => input1[29].IN1
+input1[30] => input1[30].IN1
+input1[31] => input1[31].IN1
+input2[0] => input2[0].IN1
+input2[1] => input2[1].IN1
+input2[2] => input2[2].IN1
+input2[3] => input2[3].IN1
+input2[4] => input2[4].IN1
+input2[5] => input2[5].IN1
+input2[6] => input2[6].IN1
+input2[7] => input2[7].IN1
+input2[8] => input2[8].IN1
+input2[9] => input2[9].IN1
+input2[10] => input2[10].IN1
+input2[11] => input2[11].IN1
+input2[12] => input2[12].IN1
+input2[13] => input2[13].IN1
+input2[14] => input2[14].IN1
+input2[15] => input2[15].IN1
+input2[16] => input2[16].IN1
+input2[17] => input2[17].IN1
+input2[18] => input2[18].IN1
+input2[19] => input2[19].IN1
+input2[20] => input2[20].IN1
+input2[21] => input2[21].IN1
+input2[22] => input2[22].IN1
+input2[23] => input2[23].IN1
+input2[24] => input2[24].IN1
+input2[25] => input2[25].IN1
+input2[26] => input2[26].IN1
+input2[27] => input2[27].IN1
+input2[28] => input2[28].IN1
+input2[29] => input2[29].IN1
+input2[30] => input2[30].IN1
+input2[31] => input2[31].IN1
+answer[0] <= half_adder:generate_N_bit_Adder[0].f.port2
+answer[1] <= full_adder:generate_N_bit_Adder[1].f.port3
+answer[2] <= full_adder:generate_N_bit_Adder[2].f.port3
+answer[3] <= full_adder:generate_N_bit_Adder[3].f.port3
+answer[4] <= full_adder:generate_N_bit_Adder[4].f.port3
+answer[5] <= full_adder:generate_N_bit_Adder[5].f.port3
+answer[6] <= full_adder:generate_N_bit_Adder[6].f.port3
+answer[7] <= full_adder:generate_N_bit_Adder[7].f.port3
+answer[8] <= full_adder:generate_N_bit_Adder[8].f.port3
+answer[9] <= full_adder:generate_N_bit_Adder[9].f.port3
+answer[10] <= full_adder:generate_N_bit_Adder[10].f.port3
+answer[11] <= full_adder:generate_N_bit_Adder[11].f.port3
+answer[12] <= full_adder:generate_N_bit_Adder[12].f.port3
+answer[13] <= full_adder:generate_N_bit_Adder[13].f.port3
+answer[14] <= full_adder:generate_N_bit_Adder[14].f.port3
+answer[15] <= full_adder:generate_N_bit_Adder[15].f.port3
+answer[16] <= full_adder:generate_N_bit_Adder[16].f.port3
+answer[17] <= full_adder:generate_N_bit_Adder[17].f.port3
+answer[18] <= full_adder:generate_N_bit_Adder[18].f.port3
+answer[19] <= full_adder:generate_N_bit_Adder[19].f.port3
+answer[20] <= full_adder:generate_N_bit_Adder[20].f.port3
+answer[21] <= full_adder:generate_N_bit_Adder[21].f.port3
+answer[22] <= full_adder:generate_N_bit_Adder[22].f.port3
+answer[23] <= full_adder:generate_N_bit_Adder[23].f.port3
+answer[24] <= full_adder:generate_N_bit_Adder[24].f.port3
+answer[25] <= full_adder:generate_N_bit_Adder[25].f.port3
+answer[26] <= full_adder:generate_N_bit_Adder[26].f.port3
+answer[27] <= full_adder:generate_N_bit_Adder[27].f.port3
+answer[28] <= full_adder:generate_N_bit_Adder[28].f.port3
+answer[29] <= full_adder:generate_N_bit_Adder[29].f.port3
+answer[30] <= full_adder:generate_N_bit_Adder[30].f.port3
+answer[31] <= full_adder:generate_N_bit_Adder[31].f.port3
+
+
+|ALU|N_bit_adder:sumador|half_adder:generate_N_bit_Adder[0].f
+x => s.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[1].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[2].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[3].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[4].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[5].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[6].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[7].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[8].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[9].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[10].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[11].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[12].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[13].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[14].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[15].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[16].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[17].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[18].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[19].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[20].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[21].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[22].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[23].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[24].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[25].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[26].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[27].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[28].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[29].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[30].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_adder:sumador|full_adder:generate_N_bit_Adder[31].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador
+input1[0] => input1[0].IN1
+input1[1] => input1[1].IN1
+input1[2] => input1[2].IN1
+input1[3] => input1[3].IN1
+input1[4] => input1[4].IN1
+input1[5] => input1[5].IN1
+input1[6] => input1[6].IN1
+input1[7] => input1[7].IN1
+input1[8] => input1[8].IN1
+input1[9] => input1[9].IN1
+input1[10] => input1[10].IN1
+input1[11] => input1[11].IN1
+input1[12] => input1[12].IN1
+input1[13] => input1[13].IN1
+input1[14] => input1[14].IN1
+input1[15] => input1[15].IN1
+input1[16] => input1[16].IN1
+input1[17] => input1[17].IN1
+input1[18] => input1[18].IN1
+input1[19] => input1[19].IN1
+input1[20] => input1[20].IN1
+input1[21] => input1[21].IN1
+input1[22] => input1[22].IN1
+input1[23] => input1[23].IN1
+input1[24] => input1[24].IN1
+input1[25] => input1[25].IN1
+input1[26] => input1[26].IN1
+input1[27] => input1[27].IN1
+input1[28] => input1[28].IN1
+input1[29] => input1[29].IN1
+input1[30] => input1[30].IN1
+input1[31] => input1[31].IN1
+input2[0] => input2[0].IN1
+input2[1] => input2[1].IN1
+input2[2] => input2[2].IN1
+input2[3] => input2[3].IN1
+input2[4] => input2[4].IN1
+input2[5] => input2[5].IN1
+input2[6] => input2[6].IN1
+input2[7] => input2[7].IN1
+input2[8] => input2[8].IN1
+input2[9] => input2[9].IN1
+input2[10] => input2[10].IN1
+input2[11] => input2[11].IN1
+input2[12] => input2[12].IN1
+input2[13] => input2[13].IN1
+input2[14] => input2[14].IN1
+input2[15] => input2[15].IN1
+input2[16] => input2[16].IN1
+input2[17] => input2[17].IN1
+input2[18] => input2[18].IN1
+input2[19] => input2[19].IN1
+input2[20] => input2[20].IN1
+input2[21] => input2[21].IN1
+input2[22] => input2[22].IN1
+input2[23] => input2[23].IN1
+input2[24] => input2[24].IN1
+input2[25] => input2[25].IN1
+input2[26] => input2[26].IN1
+input2[27] => input2[27].IN1
+input2[28] => input2[28].IN1
+input2[29] => input2[29].IN1
+input2[30] => input2[30].IN1
+input2[31] => input2[31].IN1
+answer[0] <= half_substractor:generate_N_bit_substractor[0].f.port2
+answer[1] <= full_substractor:generate_N_bit_substractor[1].f.port3
+answer[2] <= full_substractor:generate_N_bit_substractor[2].f.port3
+answer[3] <= full_substractor:generate_N_bit_substractor[3].f.port3
+answer[4] <= full_substractor:generate_N_bit_substractor[4].f.port3
+answer[5] <= full_substractor:generate_N_bit_substractor[5].f.port3
+answer[6] <= full_substractor:generate_N_bit_substractor[6].f.port3
+answer[7] <= full_substractor:generate_N_bit_substractor[7].f.port3
+answer[8] <= full_substractor:generate_N_bit_substractor[8].f.port3
+answer[9] <= full_substractor:generate_N_bit_substractor[9].f.port3
+answer[10] <= full_substractor:generate_N_bit_substractor[10].f.port3
+answer[11] <= full_substractor:generate_N_bit_substractor[11].f.port3
+answer[12] <= full_substractor:generate_N_bit_substractor[12].f.port3
+answer[13] <= full_substractor:generate_N_bit_substractor[13].f.port3
+answer[14] <= full_substractor:generate_N_bit_substractor[14].f.port3
+answer[15] <= full_substractor:generate_N_bit_substractor[15].f.port3
+answer[16] <= full_substractor:generate_N_bit_substractor[16].f.port3
+answer[17] <= full_substractor:generate_N_bit_substractor[17].f.port3
+answer[18] <= full_substractor:generate_N_bit_substractor[18].f.port3
+answer[19] <= full_substractor:generate_N_bit_substractor[19].f.port3
+answer[20] <= full_substractor:generate_N_bit_substractor[20].f.port3
+answer[21] <= full_substractor:generate_N_bit_substractor[21].f.port3
+answer[22] <= full_substractor:generate_N_bit_substractor[22].f.port3
+answer[23] <= full_substractor:generate_N_bit_substractor[23].f.port3
+answer[24] <= full_substractor:generate_N_bit_substractor[24].f.port3
+answer[25] <= full_substractor:generate_N_bit_substractor[25].f.port3
+answer[26] <= full_substractor:generate_N_bit_substractor[26].f.port3
+answer[27] <= full_substractor:generate_N_bit_substractor[27].f.port3
+answer[28] <= full_substractor:generate_N_bit_substractor[28].f.port3
+answer[29] <= full_substractor:generate_N_bit_substractor[29].f.port3
+answer[30] <= full_substractor:generate_N_bit_substractor[30].f.port3
+answer[31] <= full_substractor:generate_N_bit_substractor[31].f.port3
+
+
+|ALU|N_bit_substractor:restador|half_substractor:generate_N_bit_substractor[0].f
+x => s.IN0
+x => c.IN0
+y => s.IN1
+y => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[1].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[2].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[3].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[4].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[5].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[6].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[7].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[8].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[9].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[10].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[11].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[12].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[13].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[14].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[15].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[16].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[17].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[18].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[19].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[20].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[21].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[22].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[23].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[24].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[25].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[26].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[27].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[28].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[29].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[30].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|N_bit_substractor:restador|full_substractor:generate_N_bit_substractor[31].f
+x => s.IN0
+x => c_out.IN0
+x => c_out.IN0
+y => s.IN1
+y => c_out.IN0
+y => c_out.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
