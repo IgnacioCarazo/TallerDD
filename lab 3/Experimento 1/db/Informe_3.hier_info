@@ -6,14 +6,20 @@ ALU_Code[0] => Mux0.IN7
 ALU_Code[0] => Mux1.IN6
 ALU_Code[0] => Mux2.IN6
 ALU_Code[0] => Mux3.IN7
+ALU_Code[0] => Mux4.IN8
+ALU_Code[0] => Mux5.IN8
 ALU_Code[1] => Mux0.IN6
 ALU_Code[1] => Mux1.IN5
 ALU_Code[1] => Mux2.IN5
 ALU_Code[1] => Mux3.IN6
+ALU_Code[1] => Mux4.IN7
+ALU_Code[1] => Mux5.IN7
 ALU_Code[2] => Mux0.IN5
 ALU_Code[2] => Mux1.IN4
 ALU_Code[2] => Mux2.IN4
 ALU_Code[2] => Mux3.IN5
+ALU_Code[2] => Mux4.IN6
+ALU_Code[2] => Mux5.IN6
 A[0] => A[0].IN2
 A[1] => A[1].IN2
 A[2] => A[2].IN2
@@ -26,8 +32,8 @@ ALU_Result[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 ALU_Result[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 ALU_Result[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 ALU_Result[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-flags[0] <= <GND>
-flags[1] <= <GND>
+flags[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
 flags[2] <= <GND>
 flags[3] <= <GND>
 display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
@@ -64,6 +70,7 @@ answer[4] <= full_adder:generate_N_bit_Adder[4].f.port3
 answer[5] <= full_adder:generate_N_bit_Adder[5].f.port3
 answer[6] <= full_adder:generate_N_bit_Adder[6].f.port3
 answer[7] <= full_adder:generate_N_bit_Adder[7].f.port3
+carry_out <= full_adder:generate_N_bit_Adder[7].f.port4
 
 
 |ALU_tb|ALU:test_unit|N_bit_adder:sumador|half_adder:generate_N_bit_Adder[0].f
@@ -198,6 +205,7 @@ answer[4] <= full_substractor:generate_N_bit_substractor[4].f.port3
 answer[5] <= full_substractor:generate_N_bit_substractor[5].f.port3
 answer[6] <= full_substractor:generate_N_bit_substractor[6].f.port3
 answer[7] <= full_substractor:generate_N_bit_substractor[7].f.port3
+carry_out <= full_substractor:generate_N_bit_substractor[7].f.port4
 
 
 |ALU_tb|ALU:test_unit|N_bit_substractor:restador|half_substractor:generate_N_bit_substractor[0].f
