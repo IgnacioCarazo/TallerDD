@@ -1,0 +1,8 @@
+https://www.fpga4student.com/2017/06/Verilog-code-for-ALU.html
+
+https://tecdigital.tec.ac.cr/dotlrn/classes/IDC/CE3201/S-2-2021.CA.CE3201.2/file-storage/view/public%2Fdoc-us-dsnbk-42-1004282204-de1-soc-user-manual.pdf
+http://www.referencedesigner.com/tutorials/verilog/verilog_19.php
+https://www.fpga4student.com/2017/07/n-bit-adder-design-in-verilog.html
+https://www.nandland.com/vhdl/modules/binary-to-7-segment.html
+
+el libro :v
