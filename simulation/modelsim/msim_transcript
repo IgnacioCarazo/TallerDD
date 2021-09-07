@@ -1,0 +1,111 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do Informe_3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Pc/Desktop/TallerDD/lab\ 3/Experimento\ 1 {C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:25:17 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1" C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 21:25:17 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Pc/Desktop/TallerDD/lab\ 3/Experimento\ 1 {C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:25:17 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1" C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	N_bit_adder
+# End time: 21:25:17 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Pc/Desktop/TallerDD/lab\ 3/Experimento\ 1 {C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:25:17 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1" C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU_tb.sv 
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 21:25:17 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Pc/Desktop/TallerDD/lab\ 3/Experimento\ 1 {C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_substractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:25:17 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1" C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_substractor.sv 
+# -- Compiling module N_bit_substractor
+# -- Compiling module half_substractor
+# -- Compiling module full_substractor
+# 
+# Top level modules:
+# 	N_bit_substractor
+# End time: 21:25:17 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Pc/Desktop/TallerDD/lab\ 3/Experimento\ 1 {C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/tb_N_bit_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:25:17 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1" C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/tb_N_bit_adder.sv 
+# -- Compiling module tb_N_bit_adder
+# 
+# Top level modules:
+# 	tb_N_bit_adder
+# End time: 21:25:17 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_N_bit_adder.sv
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_N_bit_adder.sv 
+# Start time: 21:25:17 on Sep 06,2021
+# ** Error (suppressible): (vsim-19) Failed to access library 'tb_N_bit_adder' at "tb_N_bit_adder".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Informe_3_run_msim_rtl_verilog.do PAUSED at line 15
+vsim work.ALU_tb
+# vsim work.ALU_tb 
+# Start time: 21:25:17 on Sep 06,2021
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.N_bit_adder
+# Loading work.N_bit_substractor
+# Loading work.half_adder
+# Loading work.full_adder
+# Loading work.half_substractor
+# Loading work.full_substractor
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'input1'. The port definition is at: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_adder.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_unit/sumador File: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'input2'. The port definition is at: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_adder.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_unit/sumador File: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'answer'. The port definition is at: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_adder.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_unit/sumador File: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'input1'. The port definition is at: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_substractor.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_unit/restador File: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'input2'. The port definition is at: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_substractor.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_unit/restador File: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'answer'. The port definition is at: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/N_bit_substractor.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/test_unit/restador File: C:/Users/Pc/Desktop/TallerDD/lab 3/Experimento 1/ALU.sv Line: 42
+add wave -position end  sim:/ALU_tb/A
+add wave -position end  sim:/ALU_tb/B
+add wave -position end  sim:/ALU_tb/ALU_Code
+add wave -position end  sim:/ALU_tb/ALU_Result
+add wave -position end  sim:/ALU_tb/flags
+add wave -position end  sim:/ALU_tb/display
+run -all
+# End time: 21:26:28 on Sep 06,2021, Elapsed time: 0:01:11
+# Errors: 1, Warnings: 6
