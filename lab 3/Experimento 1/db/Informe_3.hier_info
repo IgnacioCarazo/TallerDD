@@ -2,22 +2,18 @@
 
 
 |ALU_tb|ALU:test_unit
-ALU_Code[0] => Mux0.IN18
-ALU_Code[0] => Mux1.IN17
-ALU_Code[0] => Mux2.IN17
-ALU_Code[0] => Mux3.IN18
-ALU_Code[1] => Mux0.IN17
-ALU_Code[1] => Mux1.IN16
-ALU_Code[1] => Mux2.IN16
-ALU_Code[1] => Mux3.IN17
-ALU_Code[2] => Mux0.IN16
-ALU_Code[2] => Mux1.IN15
-ALU_Code[2] => Mux2.IN15
-ALU_Code[2] => Mux3.IN16
-ALU_Code[3] => Mux0.IN15
-ALU_Code[3] => Mux1.IN14
-ALU_Code[3] => Mux2.IN14
-ALU_Code[3] => Mux3.IN15
+ALU_Code[0] => Mux0.IN7
+ALU_Code[0] => Mux1.IN6
+ALU_Code[0] => Mux2.IN6
+ALU_Code[0] => Mux3.IN7
+ALU_Code[1] => Mux0.IN6
+ALU_Code[1] => Mux1.IN5
+ALU_Code[1] => Mux2.IN5
+ALU_Code[1] => Mux3.IN6
+ALU_Code[2] => Mux0.IN5
+ALU_Code[2] => Mux1.IN4
+ALU_Code[2] => Mux2.IN4
+ALU_Code[2] => Mux3.IN5
 A[0] => A[0].IN2
 A[1] => A[1].IN2
 A[2] => A[2].IN2
@@ -34,6 +30,13 @@ flags[0] <= <GND>
 flags[1] <= <GND>
 flags[2] <= <GND>
 flags[3] <= <GND>
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_tb|ALU:test_unit|N_bit_adder:sumador
