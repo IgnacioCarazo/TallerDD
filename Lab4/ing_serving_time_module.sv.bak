@@ -1,0 +1,9 @@
+module ing_serving_time_module(input btn, 
+										 input [3:0]state
+										 output to)
+// PSEUDOCODIGO
+										 
+	if (state == 'servir_agua')
+		assign to = 'mocacinno' ? 'seg' : '2seg'
+	
+endmodule

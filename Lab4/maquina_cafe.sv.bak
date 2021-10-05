@@ -1,0 +1,16 @@
+module maquina_cafe(input btn1, btn2, btn3, btn4);
+
+
+[3:0]reg btn_seleccionado
+
+
+sel_boton seleccionador_de_boton(btn1, btn2, btn3, btn4, btn_seleccionado)
+
+ing_serving_time_module modulo_servido(btn_seleccionado, tiempo)
+
+drink_cost_module modulo_costo(btn_seleccionado, costo)
+
+
+
+
+endmodule

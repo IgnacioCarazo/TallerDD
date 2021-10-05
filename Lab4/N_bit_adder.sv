@@ -3,7 +3,7 @@
 // Top Level Verilog code for N-bit Adder using Structural Modeling
 module N_bit_adder(input1,input2,answer,carry_out);
 
-parameter N=4;
+parameter N=2;
 input [N-1:0] input1,input2;
    output [N-1:0] answer;
   output wire carry_out;

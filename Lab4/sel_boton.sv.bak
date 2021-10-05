@@ -1,0 +1,19 @@
+module sel_boton(input logic btn1, btn2, btn3, btn4,
+						output reg btn_sel)
+						
+	// "ID" botones
+  // expreso = 2'b00
+  // c_leche = 2'b01
+  // capuccino = 2'b10
+  // mocaccino = 2'b11
+
+	if (btn1)
+		btn_sel = 2'b00;
+	else if (btn2)
+		btn_sel = 2'b01;
+	else if (btn3)
+		btn_sel = 2'b10;
+	else if (btn4)
+		btn_sel = 2'b11;
+
+endmodule

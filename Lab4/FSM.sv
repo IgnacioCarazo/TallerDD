@@ -1,11 +1,22 @@
 module FSM (
-  input clk, rst,
-  input expreso, c_leche, capuccino, mocaccino, cancelar,
+  input clk, rst, enable, cancelar,
+  input[3:0] btn,
   
   output reg [2:0] out
 );
   reg [3:0] state, next_state;
   
+  
+  // "ID" botones
+  // expreso = 4'b1110
+  // c_leche = 4'b1101
+  // capuccino = 4'b1011
+  // mocaccino = 4'b0111
+  
+  
+  
+  
+  //estados
   parameter s_esperar_boton = 4'b0000;
   parameter s_revisar_boton = 4'b0001;
   parameter s_revisar_monto = 4'b0010;
@@ -25,13 +36,13 @@ module FSM (
   always_comb
     case (state)
       
-      s_esperar_boton: if (expreso | c_leche | capuccino | mocaccino | mocaccino | cancelar) next_state = s_revisar_boton;
+      s_esperar_boton: if (enable) next_state = s_revisar_boton;
       else next_state = s_esperar_boton;
 		
 		s_revisar_boton: if (cancelar) next_state = s_devolver_dinero;
       				  else next_state = s_revisar_monto;
       
-		s_revisar_monto: if (expreso) next_state = s_servir_agua; //cambiar esta condicion por la de si el monto es suficiente
+		s_revisar_monto: if (enable) next_state = s_servir_agua; //cambiar esta condicion por la de si el monto es suficiente
       				  else next_state = s_devolver_dinero;
       
       s_devolver_dinero: next_state = s_esperar_boton;
@@ -40,10 +51,10 @@ module FSM (
     
       s_servir_cafe: next_state = s_revisa_expreso;
       
-      s_revisa_expreso: if (expreso) next_state = s_servir_azucar;
+      s_revisa_expreso: if (4'b1110) next_state = s_servir_azucar;
       					  else next_state = s_revisa_leche;
       
-      s_revisa_leche: if (c_leche | capuccino) next_state = s_servir_leche;
+      s_revisa_leche: if (4'b1101 | 4'b1011) next_state = s_servir_leche;
       					  else next_state = s_servir_chocolate;
       
       s_servir_leche: next_state = s_servir_azucar;
@@ -72,7 +83,7 @@ module FSM (
       case (state) 
       
       s_revisar_boton: begin
-        		      //out
+        		      //oout
      				  end
       
       s_revisar_monto: begin
@@ -84,11 +95,11 @@ module FSM (
      				  end
       
       s_servir_agua: begin
-        			 //out
+								out = s_servir_agua;
 	   				 end
       
       s_servir_cafe: begin
-        		    //out
+        		    out = s_servir_cafe;
      				end
       	
       s_revisa_expreso: begin
@@ -100,14 +111,14 @@ module FSM (
      				  end
       
       s_servir_leche: begin
-        			//out
+        			      out = s_servir_leche;
      				  end
       
       s_servir_chocolate:  begin
-        		   //out
+        		       out = s_servir_chocolate;
      			   end
       s_servir_azucar:  begin
-          				//out
+          				out = s_servir_azucar;
         				end
       s_devolver_cambio:  begin
          				 //out

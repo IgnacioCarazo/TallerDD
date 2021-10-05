@@ -1,0 +1,21 @@
+module drink_cost_module(input btn, 
+								 output cost);
+								 
+  parameter expreso = 2'b00;
+  parameter c_leche = 2'b01;
+  parameter capuccino = 2'b10;
+  parameter mocaccino = 2'b11;
+  
+  
+  if (btn == expreso)
+		cost = '300'
+  else if (btn == c_leche)
+		cost = '400'
+  else if (btn == capuccino)
+		cost = '500'
+  else if (btn == mocaccino)
+		cost = '700'
+	
+
+
+endmodule
