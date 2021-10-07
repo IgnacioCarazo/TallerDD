@@ -3,6 +3,7 @@ module maquina_cafe(input logic [3:0] btn,
 
 
 	reg[3:0] btn_seleccionado;
+	reg[3:0] monto_registrado;
 
 
 // falta el modulo sumador (N_BIT_ADDER)

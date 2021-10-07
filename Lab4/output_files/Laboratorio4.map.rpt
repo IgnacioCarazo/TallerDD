@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio4
-Wed Oct 06 12:44:54 2021
+Thu Oct 07 13:11:20 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,14 +13,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Parameter Settings for User Entity Instance: Register:btn_reg
- 11. Parameter Settings for User Entity Instance: drink_cost_module:comb_3
- 12. Port Connectivity Checks: "drink_cost_module:comb_3"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Register:btn_reg
+ 12. Parameter Settings for User Entity Instance: ing_serving_time_module:modulo_tiempo_servido
+ 13. Port Connectivity Checks: "ing_serving_time_module:modulo_tiempo_servido"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -47,14 +48,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 06 12:44:54 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 07 13:11:20 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
 ; Top-level Entity Name           ; prueba                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 4                                           ;
-; Total pins                      ; 17                                          ;
+; Total pins                      ; 21                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -163,63 +164,80 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; Register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Register.sv          ;         ;
-; drink_cost_module.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/drink_cost_module.sv ;         ;
-; sel_boton.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sel_boton.sv         ;         ;
-; prueba.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv            ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
+; Register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Register.sv                ;         ;
+; ing_serving_time_module.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv ;         ;
+; sel_boton.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/sel_boton.sv               ;         ;
+; prueba.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv                  ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                         ;
-+---------------------------------------------+-----------------------+
-; Resource                                    ; Usage                 ;
-+---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 6                     ;
-;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 11                    ;
-;     -- 7 input functions                    ; 0                     ;
-;     -- 6 input functions                    ; 0                     ;
-;     -- 5 input functions                    ; 0                     ;
-;     -- 4 input functions                    ; 7                     ;
-;     -- <=3 input functions                  ; 4                     ;
-;                                             ;                       ;
-; Dedicated logic registers                   ; 4                     ;
-;                                             ;                       ;
-; I/O pins                                    ; 17                    ;
-;                                             ;                       ;
-; Total DSP Blocks                            ; 0                     ;
-;                                             ;                       ;
-; Maximum fan-out node                        ; Register:btn_reg|q[0] ;
-; Maximum fan-out                             ; 7                     ;
-; Total fan-out                               ; 75                    ;
-; Average fan-out                             ; 1.53                  ;
-+---------------------------------------------+-----------------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 13             ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 19             ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 5              ;
+;     -- 5 input functions                    ; 1              ;
+;     -- 4 input functions                    ; 5              ;
+;     -- <=3 input functions                  ; 8              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 4              ;
+;                                             ;                ;
+; I/O pins                                    ; 21             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; state[1]~input ;
+; Maximum fan-out                             ; 7              ;
+; Total fan-out                               ; 124            ;
+; Average fan-out                             ; 1.91           ;
++---------------------------------------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                          ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name       ; Library Name ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+-------------------+--------------+
-; |prueba                       ; 11 (0)              ; 4 (0)                     ; 0                 ; 0          ; 17   ; 0            ; |prueba                          ; prueba            ; work         ;
-;    |Register:btn_reg|         ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|Register:btn_reg         ; Register          ; work         ;
-;    |drink_cost_module:comb_3| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|drink_cost_module:comb_3 ; drink_cost_module ; work         ;
-;    |sel_boton:btn_or|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|sel_boton:btn_or         ; sel_boton         ; work         ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+-------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name             ; Library Name ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
+; |prueba                                            ; 19 (0)              ; 4 (0)                     ; 0                 ; 0          ; 21   ; 0            ; |prueba                                               ; prueba                  ; work         ;
+;    |Register:btn_reg|                              ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|Register:btn_reg                              ; Register                ; work         ;
+;    |ing_serving_time_module:modulo_tiempo_servido| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|ing_serving_time_module:modulo_tiempo_servido ; ing_serving_time_module ; work         ;
+;    |sel_boton:btn_or|                              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|sel_boton:btn_or                              ; sel_boton               ; work         ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                    ;
++----------------------------------------------------------+----------------------------------------------------+------------------------+
+; Latch Name                                               ; Latch Enable Signal                                ; Free of Timing Hazards ;
++----------------------------------------------------------+----------------------------------------------------+------------------------+
+; ing_serving_time_module:modulo_tiempo_servido|hex_val[0] ; ing_serving_time_module:modulo_tiempo_servido|Mux4 ; yes                    ;
+; ing_serving_time_module:modulo_tiempo_servido|hex_val[2] ; ing_serving_time_module:modulo_tiempo_servido|Mux4 ; yes                    ;
+; ing_serving_time_module:modulo_tiempo_servido|hex_val[3] ; ing_serving_time_module:modulo_tiempo_servido|Mux4 ; yes                    ;
+; ing_serving_time_module:modulo_tiempo_servido|hex_val[4] ; ing_serving_time_module:modulo_tiempo_servido|Mux4 ; yes                    ;
+; ing_serving_time_module:modulo_tiempo_servido|hex_val[5] ; ing_serving_time_module:modulo_tiempo_servido|Mux4 ; yes                    ;
+; ing_serving_time_module:modulo_tiempo_servido|hex_val[6] ; ing_serving_time_module:modulo_tiempo_servido|Mux4 ; yes                    ;
+; Number of user-specified and inferred latches = 6        ;                                                    ;                        ;
++----------------------------------------------------------+----------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -237,17 +255,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; Register:btn_reg|q[0]                  ; 7       ;
-; Register:btn_reg|q[1]                  ; 7       ;
-; Register:btn_reg|q[2]                  ; 7       ;
-; Register:btn_reg|q[3]                  ; 7       ;
-; Total number of inverted registers = 4 ;         ;
-+----------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |prueba|ing_serving_time_module:modulo_tiempo_servido|Mux3 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -260,25 +274,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: drink_cost_module:comb_3 ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; expreso        ; 1110  ; Unsigned Binary                              ;
-; c_leche        ; 1101  ; Unsigned Binary                              ;
-; capuccino      ; 1011  ; Unsigned Binary                              ;
-; mocaccino      ; 0111  ; Unsigned Binary                              ;
-+----------------+-------+----------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ing_serving_time_module:modulo_tiempo_servido ;
++--------------------+-------+---------------------------------------------------------------+
+; Parameter Name     ; Value ; Type                                                          ;
++--------------------+-------+---------------------------------------------------------------+
+; expreso            ; 1110  ; Unsigned Binary                                               ;
+; c_leche            ; 1101  ; Unsigned Binary                                               ;
+; capuccino          ; 1011  ; Unsigned Binary                                               ;
+; mocaccino          ; 0111  ; Unsigned Binary                                               ;
+; s_servir_agua      ; 0100  ; Unsigned Binary                                               ;
+; s_servir_cafe      ; 0101  ; Unsigned Binary                                               ;
+; s_revisa_expreso   ; 0110  ; Unsigned Binary                                               ;
+; s_revisa_leche     ; 0111  ; Unsigned Binary                                               ;
+; s_servir_leche     ; 1000  ; Unsigned Binary                                               ;
+; s_servir_chocolate ; 1001  ; Unsigned Binary                                               ;
+; s_servir_azucar    ; 1010  ; Unsigned Binary                                               ;
++--------------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "drink_cost_module:comb_3"                                                           ;
+; Port Connectivity Checks: "ing_serving_time_module:modulo_tiempo_servido"                                      ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; cost ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; to   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -289,15 +310,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 4                           ;
 ;     ENA CLR           ; 4                           ;
-; arriav_lcell_comb     ; 12                          ;
-;     normal            ; 12                          ;
+; arriav_lcell_comb     ; 24                          ;
+;     normal            ; 24                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
-;         4 data inputs ; 7                           ;
-; boundary_port         ; 17                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 21                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.86                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -306,7 +331,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -316,54 +341,73 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 06 12:44:18 2021
+    Info: Processing started: Thu Oct 07 13:11:06 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio4 -c Laboratorio4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: Counter File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Counter.sv Line: 1
+    Info (12023): Found entity 1: Counter File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: Register File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Register.sv Line: 1
+    Info (12023): Found entity 1: Register File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Register.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
-    Info (12023): Found entity 1: Comparator File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Comparator.sv Line: 1
+    Info (12023): Found entity 1: Comparator File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Comparator.sv Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file n_bit_adder.sv
-    Info (12023): Found entity 1: N_bit_adder File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/N_bit_adder.sv Line: 4
-    Info (12023): Found entity 2: half_adder File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/N_bit_adder.sv Line: 28
-    Info (12023): Found entity 3: full_adder File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/N_bit_adder.sv Line: 38
+    Info (12023): Found entity 1: N_bit_adder File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/N_bit_adder.sv Line: 4
+    Info (12023): Found entity 2: half_adder File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/N_bit_adder.sv Line: 28
+    Info (12023): Found entity 3: full_adder File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/N_bit_adder.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file ing_serving_time_module.sv
-    Info (12023): Found entity 1: ing_serving_time_module File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/ing_serving_time_module.sv Line: 1
+    Info (12023): Found entity 1: ing_serving_time_module File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file drink_cost_module.sv
-    Info (12023): Found entity 1: drink_cost_module File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/drink_cost_module.sv Line: 1
+    Info (12023): Found entity 1: drink_cost_module File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/drink_cost_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sel_boton.sv
-    Info (12023): Found entity 1: sel_boton File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sel_boton.sv Line: 1
+    Info (12023): Found entity 1: sel_boton File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/sel_boton.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_cafe.sv
-    Info (12023): Found entity 1: maquina_cafe File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/maquina_cafe.sv Line: 1
+    Info (12023): Found entity 1: maquina_cafe File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/maquina_cafe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file prueba.sv
-    Info (12023): Found entity 1: prueba File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 1
+    Info (12023): Found entity 1: prueba File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Sumador.sv Line: 1
-Warning (10037): Verilog HDL or VHDL warning at FSM.sv(54): conditional expression evaluates to a constant File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/FSM.sv Line: 54
-Warning (10037): Verilog HDL or VHDL warning at FSM.sv(57): conditional expression evaluates to a constant File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/FSM.sv Line: 57
-Critical Warning (10846): Verilog HDL Instantiation warning at prueba.sv(22): instance has no name File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 22
+    Info (12023): Found entity 1: sumador File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Sumador.sv Line: 1
+Warning (10037): Verilog HDL or VHDL warning at FSM.sv(54): conditional expression evaluates to a constant File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/FSM.sv Line: 54
+Warning (10037): Verilog HDL or VHDL warning at FSM.sv(57): conditional expression evaluates to a constant File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/FSM.sv Line: 57
 Info (12127): Elaborating entity "prueba" for the top level hierarchy
-Info (12128): Elaborating entity "sel_boton" for hierarchy "sel_boton:btn_or" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 17
-Info (12128): Elaborating entity "Register" for hierarchy "Register:btn_reg" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 20
-Info (12128): Elaborating entity "drink_cost_module" for hierarchy "drink_cost_module:comb_3" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 22
+Info (12128): Elaborating entity "sel_boton" for hierarchy "sel_boton:btn_or" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 17
+Info (12128): Elaborating entity "Register" for hierarchy "Register:btn_reg" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 20
+Info (12128): Elaborating entity "ing_serving_time_module" for hierarchy "ing_serving_time_module:modulo_tiempo_servido" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 23
+Warning (10240): Verilog HDL Always Construct warning at ing_serving_time_module.sv(30): inferring latch(es) for variable "hex_val", which holds its previous value in one or more paths through the always construct File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Warning (10034): Output port "to" at ing_serving_time_module.sv(3) has no driver File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 3
+Info (10041): Inferred latch for "hex_val[0]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (10041): Inferred latch for "hex_val[1]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (10041): Inferred latch for "hex_val[2]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (10041): Inferred latch for "hex_val[3]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (10041): Inferred latch for "hex_val[4]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (10041): Inferred latch for "hex_val[5]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (10041): Inferred latch for "hex_val[6]" at ing_serving_time_module.sv(30) File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "ing_serving_time_module:modulo_tiempo_servido|hex_val[6]" merged with LATCH primitive "ing_serving_time_module:modulo_tiempo_servido|hex_val[0]" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+    Info (13026): Duplicate LATCH primitive "ing_serving_time_module:modulo_tiempo_servido|hex_val[3]" merged with LATCH primitive "ing_serving_time_module:modulo_tiempo_servido|hex_val[0]" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+Warning (13012): Latch ing_serving_time_module:modulo_tiempo_servido|hex_val[0] has unsafe behavior File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state[0] File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+Warning (13012): Latch ing_serving_time_module:modulo_tiempo_servido|hex_val[2] has unsafe behavior File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state[1] File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+Warning (13012): Latch ing_serving_time_module:modulo_tiempo_servido|hex_val[4] has unsafe behavior File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state[0] File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+Warning (13012): Latch ing_serving_time_module:modulo_tiempo_servido|hex_val[5] has unsafe behavior File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state[1] File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[2]" is stuck at GND File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 4
+    Warning (13410): Pin "display[1]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Info (21057): Implemented 44 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Wed Oct 06 12:44:55 2021
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:54
+    Info (21061): Implemented 23 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Thu Oct 07 13:11:20 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:18
 
 

@@ -43,7 +43,7 @@ module drink_cost_module(input logic [3:0]btn,
 		  
 			default:  begin 
 							cost = 3'b000;
-							hex_val = 7'b0000000;
+							hex_val = 7'b1111111;
 						 end
 		endcase
     end 

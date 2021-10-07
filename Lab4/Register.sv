@@ -4,7 +4,7 @@ module Register #(parameter N = 4)(input logic clk, rst, en,
 											  
 											  
 always_ff @(negedge clk or posedge rst)
-	if (rst) q = 4'b1111;
+	if (rst) q = 1'b0;
 	
 	else if (en)
 		q = D;

@@ -1,6 +1,7 @@
 module ing_serving_time_module(input logic [3:0]btn, 
 										 input logic [3:0]state,
-										 output logic to);
+										 output logic to,
+										 output reg [6:0] hex_val);
 										 
 										 
 	// "ID" botones
@@ -21,29 +22,75 @@ module ing_serving_time_module(input logic [3:0]btn,
   parameter s_servir_leche = 4'b1000;
   parameter s_servir_chocolate = 4'b1001;
   parameter s_servir_azucar = 4'b1010;
+  
+  // HACEN FALTA CORRECCIONES PARA ALGUNOS CASOS PERO FUNCIONA BIEN
+   
+  always @(*)
+    begin
+	 	  case (state)
+		
+		  s_servir_agua: 
+			  begin
+					if (btn == mocaccino) 
+				begin
+					hex_val = 7'b1111001;
+					//to = '1seg';
+				end
+			 else 
+				begin
+					hex_val = 7'b0100100;
+					//to ='2seg';
+				end
+			  end
+		  
+		  s_servir_cafe:
+			  
+			  if (btn == expreso)
+				begin
+					hex_val = 7'b0110000;
+					//to = '3seg';
+				end
+			 else if (btn == c_leche | btn == capuccino)
+				begin
+					hex_val = 7'b0100100;
+					//to = '2seg';
+				end
+			 else 
+				begin
+					hex_val = 7'b1111001;
+					//to = '1seg'
+				end
+		  
+		  s_servir_leche:
+		  
+			  if (btn == c_leche)
+				begin
+					hex_val = 7'b0100100;
+					//to = '2seg';
+				end
+			 else if (btn == capuccino)
+				begin
+					hex_val = 7'b1111001;
+					//to = '1seg';
+				end
+		  
+		  s_servir_chocolate:
+		  
+				  
+				begin
+					hex_val = 7'b0100100;
+					//to = '2s';
+			   end
+		  
+		  
+			default:  begin 
+							hex_val = 7'b0000000;
+						 end
+		endcase
+    end 
+  
  
 										 
-	//if (state == s_servir_agua)
-		//if (btn == mocaccino) 
-			//to = '1seg';
-		//else 
-			//to ='2seg';
-			
-	//else if (state == s_servir_cafe)
-		//if (btn == expreso)
-			//to = '3seg';
-		//else if (btn == c_leche)
-			//to = '2seg';
-		//else 
-			//to = '1seg'
-			
-	//else if (state == s_servir_leche)
-		//if (btn == c_leche)
-			//to = '2seg';
-		//else if (btn == capuccino)
-			//to = '1seg';
-			
-	//else if (state == s_servir_chocolate)
-		//to = '2s';
+
 		
 endmodule
