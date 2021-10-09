@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Oct 07 13:11:20 2021
+Analysis & Synthesis Status : Successful - Fri Oct 08 19:36:51 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Laboratorio4
 Top-level Entity Name : prueba
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 4
-Total pins : 21
+Total pins : 28
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

@@ -1,6 +1,6 @@
-module drink_cost_module(input logic [3:0]btn, 
-								 output reg [2:0]cost,
-								 output reg [6:0] hex_val);
+module drink_cost_module(input logic [3:0]btn, // BOTON PULSADO
+								 output reg [2:0]cost, // COSTO DE LA BEBIDA SEGUN BOTON PULSADO
+								 output reg [6:0] hex_val); // DISPLAY TEMPORAL PARA VER QUE FUNCIONE
 								 
 	
 	// "ID" botones

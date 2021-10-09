@@ -1,5 +1,5 @@
-module sel_boton(input logic[3:0] btn,
-						output logic btn_sel);
+module sel_boton(input logic[3:0] btn, // BOTON ESTRIPADO
+						output logic btn_sel); // 1 O 0 INDICANDO SI ALGUN BOTON FUE ESTRIPADO
 						
 	// Este modulo es un OR que sirve para determinar si un boton ha sido pulsado o no.
 	

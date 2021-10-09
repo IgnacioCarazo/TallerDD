@@ -4,27 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "display[0]",
+					"name" : "display_cost[0]",
 					"strict" : false
 				},
 				{
-					"name" : "display[2]",
+					"name" : "display_cost[1]",
 					"strict" : false
 				},
 				{
-					"name" : "display[3]",
+					"name" : "display_cost[2]",
 					"strict" : false
 				},
 				{
-					"name" : "display[4]",
+					"name" : "display_cost[3]",
 					"strict" : false
 				},
 				{
-					"name" : "display[5]",
+					"name" : "display_cost[5]",
 					"strict" : false
 				},
 				{
-					"name" : "display[6]",
+					"name" : "display_cost[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_time[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_time[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_time[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_time[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_time[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_time[6]",
 					"strict" : false
 				},
 				{
@@ -44,11 +68,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "state[2]",
+					"name" : "state[1]",
 					"strict" : false
 				},
 				{
-					"name" : "state[3]",
+					"name" : "state[2]",
 					"strict" : false
 				},
 				{
@@ -56,7 +80,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "state[1]",
+					"name" : "state[3]",
 					"strict" : false
 				},
 				{
