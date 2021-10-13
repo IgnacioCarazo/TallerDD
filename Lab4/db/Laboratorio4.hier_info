@@ -29,6 +29,43 @@ led[2] <= btn_seleccionado[2].DB_MAX_OUTPUT_PORT_TYPE
 led[3] <= btn_seleccionado[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|prueba|clock_mod:clk_mod
+seconds <= seconds~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => seconds~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+
+
 |prueba|sel_boton:btn_or
 btn[0] => Equal0.IN3
 btn[0] => Equal1.IN2

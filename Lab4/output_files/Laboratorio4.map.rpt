@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio4
-Fri Oct 08 19:36:51 2021
+Wed Oct 13 09:14:11 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,17 +13,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Register:btn_reg
- 12. Parameter Settings for User Entity Instance: drink_cost_module:comb_3
- 13. Parameter Settings for User Entity Instance: ing_serving_time_module:modulo_tiempo_servido
- 14. Port Connectivity Checks: "ing_serving_time_module:modulo_tiempo_servido"
- 15. Port Connectivity Checks: "drink_cost_module:comb_3"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Register:btn_reg
+ 11. Parameter Settings for User Entity Instance: drink_cost_module:comb_3
+ 12. Parameter Settings for User Entity Instance: ing_serving_time_module:modulo_tiempo_servido
+ 13. Port Connectivity Checks: "ing_serving_time_module:modulo_tiempo_servido"
+ 14. Port Connectivity Checks: "drink_cost_module:comb_3"
+ 15. Port Connectivity Checks: "Register:btn_reg"
+ 16. Port Connectivity Checks: "clock_mod:clk_mod"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -50,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 08 19:36:51 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 13 09:14:10 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
 ; Top-level Entity Name           ; prueba                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
+; Total registers                 ; 0                                           ;
 ; Total pins                      ; 28                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -183,34 +184,35 @@ https://fpgasoftware.intel.com/eula.
 ; drink_cost_module.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/drink_cost_module.sv       ;         ;
 ; sel_boton.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/sel_boton.sv               ;         ;
 ; prueba.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv                  ;         ;
+; clock_mod.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/clock_mod.sv               ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                         ;
-+---------------------------------------------+-----------------------+
-; Resource                                    ; Usage                 ;
-+---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 15                    ;
-;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 25                    ;
-;     -- 7 input functions                    ; 0                     ;
-;     -- 6 input functions                    ; 4                     ;
-;     -- 5 input functions                    ; 3                     ;
-;     -- 4 input functions                    ; 14                    ;
-;     -- <=3 input functions                  ; 4                     ;
-;                                             ;                       ;
-; Dedicated logic registers                   ; 4                     ;
-;                                             ;                       ;
-; I/O pins                                    ; 28                    ;
-;                                             ;                       ;
-; Total DSP Blocks                            ; 0                     ;
-;                                             ;                       ;
-; Maximum fan-out node                        ; Register:btn_reg|q[0] ;
-; Maximum fan-out                             ; 12                    ;
-; Total fan-out                               ; 159                   ;
-; Average fan-out                             ; 1.87                  ;
-+---------------------------------------------+-----------------------+
++----------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                        ;
++---------------------------------------------+------------------------------------------------------+
+; Resource                                    ; Usage                                                ;
++---------------------------------------------+------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1                                                    ;
+;                                             ;                                                      ;
+; Combinational ALUT usage for logic          ; 1                                                    ;
+;     -- 7 input functions                    ; 0                                                    ;
+;     -- 6 input functions                    ; 0                                                    ;
+;     -- 5 input functions                    ; 0                                                    ;
+;     -- 4 input functions                    ; 1                                                    ;
+;     -- <=3 input functions                  ; 0                                                    ;
+;                                             ;                                                      ;
+; Dedicated logic registers                   ; 0                                                    ;
+;                                             ;                                                      ;
+; I/O pins                                    ; 28                                                   ;
+;                                             ;                                                      ;
+; Total DSP Blocks                            ; 0                                                    ;
+;                                             ;                                                      ;
+; Maximum fan-out node                        ; ing_serving_time_module:modulo_tiempo_servido|Mux4~0 ;
+; Maximum fan-out                             ; 2                                                    ;
+; Total fan-out                               ; 34                                                   ;
+; Average fan-out                             ; 0.60                                                 ;
++---------------------------------------------+------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -218,13 +220,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name             ; Library Name ;
 +----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
-; |prueba                                            ; 25 (0)              ; 4 (0)                     ; 0                 ; 0          ; 28   ; 0            ; |prueba                                               ; prueba                  ; work         ;
-;    |Register:btn_reg|                              ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|Register:btn_reg                              ; Register                ; work         ;
-;    |drink_cost_module:comb_3|                      ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|drink_cost_module:comb_3                      ; drink_cost_module       ; work         ;
-;    |ing_serving_time_module:modulo_tiempo_servido| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|ing_serving_time_module:modulo_tiempo_servido ; ing_serving_time_module ; work         ;
-;    |sel_boton:btn_or|                              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|sel_boton:btn_or                              ; sel_boton               ; work         ;
+; |prueba                                            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 28   ; 0            ; |prueba                                               ; prueba                  ; work         ;
+;    |ing_serving_time_module:modulo_tiempo_servido| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|ing_serving_time_module:modulo_tiempo_servido ; ing_serving_time_module ; work         ;
 +----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------+--------------------------------------+
+; Register name                         ; Reason for Removal                   ;
++---------------------------------------+--------------------------------------+
+; Register:btn_reg|q[0..3]              ; Stuck at VCC due to stuck port clock ;
+; Total Number of Removed Registers = 4 ;                                      ;
++---------------------------------------+--------------------------------------+
 
 
 +------------------------------------------------------+
@@ -232,36 +241,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; Register:btn_reg|q[0]                  ; 12      ;
-; Register:btn_reg|q[1]                  ; 12      ;
-; Register:btn_reg|q[2]                  ; 12      ;
-; Register:btn_reg|q[3]                  ; 12      ;
-; Total number of inverted registers = 4 ;         ;
-+----------------------------------------+---------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |prueba|ing_serving_time_module:modulo_tiempo_servido|Mux5 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -323,24 +310,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------+
+; Port Connectivity Checks: "Register:btn_reg"     ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; clk  ; Input ; Info     ; Explicitly unconnected ;
++------+-------+----------+------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_mod:clk_mod"                                                                     ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; seconds ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 4                           ;
-;     ENA CLR           ; 4                           ;
-; arriav_lcell_comb     ; 32                          ;
-;     normal            ; 32                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         4 data inputs ; 14                          ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 4                           ;
+; arriav_lcell_comb     ; 4                           ;
+;     normal            ; 4                           ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
 ; boundary_port         ; 28                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.98                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -349,7 +350,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -359,7 +360,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 08 19:36:37 2021
+    Info: Processing started: Wed Oct 13 09:13:56 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio4 -c Laboratorio4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -389,27 +390,51 @@ Info (12021): Found 1 design units, including 1 entities, in source file sumador
     Info (12023): Found entity 1: sumador File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registersumador.sv
     Info (12023): Found entity 1: RegisterSumador File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/RegisterSumador.sv Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at prueba.sv(30): instance has no name File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file clock_mod.sv
+    Info (12023): Found entity 1: clock_mod File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/clock_mod.sv Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at prueba.sv(32): instance has no name File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 32
 Info (12127): Elaborating entity "prueba" for the top level hierarchy
-Info (12128): Elaborating entity "sel_boton" for hierarchy "sel_boton:btn_or" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 25
-Info (12128): Elaborating entity "Register" for hierarchy "Register:btn_reg" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 28
-Info (12128): Elaborating entity "drink_cost_module" for hierarchy "drink_cost_module:comb_3" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 30
-Info (12128): Elaborating entity "ing_serving_time_module" for hierarchy "ing_serving_time_module:modulo_tiempo_servido" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 32
+Info (12128): Elaborating entity "clock_mod" for hierarchy "clock_mod:clk_mod" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 25
+Info (12128): Elaborating entity "sel_boton" for hierarchy "sel_boton:btn_or" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 27
+Info (12128): Elaborating entity "Register" for hierarchy "Register:btn_reg" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 30
+Info (12128): Elaborating entity "drink_cost_module" for hierarchy "drink_cost_module:comb_3" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 32
+Info (12128): Elaborating entity "ing_serving_time_module" for hierarchy "ing_serving_time_module:modulo_tiempo_servido" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 34
 Warning (10034): Output port "to" at ing_serving_time_module.sv(3) has no driver File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 3
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "display_cost[0]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_cost[1]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_cost[2]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_cost[3]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
     Warning (13410): Pin "display_cost[4]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_cost[5]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_cost[6]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_time[0]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_time[3]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_time[4]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
     Warning (13410): Pin "display_time[5]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "display_time[6]" is stuck at VCC File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 3
+    Warning (13410): Pin "led[0]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
+    Warning (13410): Pin "led[1]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
+    Warning (13410): Pin "led[2]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
+    Warning (13410): Pin "led[3]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 1
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 1
+    Warning (15610): No output dependent on input pin "btn[0]" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+    Warning (15610): No output dependent on input pin "btn[1]" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+    Warning (15610): No output dependent on input pin "btn[2]" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+    Warning (15610): No output dependent on input pin "btn[3]" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 2
+Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 25 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4794 megabytes
-    Info: Processing ended: Fri Oct 08 19:36:51 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 1 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Wed Oct 13 09:14:11 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:17
 
 

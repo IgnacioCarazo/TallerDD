@@ -9,7 +9,7 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 	reg [3:0]btn_seleccionado;
 	reg [3:0]estado;
 	reg enable;
-	
+	reg seconds; 
 	reg [2:0]cost;
 	reg to;
 	
@@ -22,10 +22,12 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 	// Descomentar para probar modulo de de servido de ingredientes
 	// Dependiendo del estado que se maneja con los switches y el btn estripado muestra el tiempo en display
 	
+	clock_mod clk_mod(seconds, clk); // usar este clock para cualquier modulo que necesite de un clock
+	
 	sel_boton btn_or(btn, enable);
 	
 	
-	Register btn_reg(clk, rst, enable, btn, btn_seleccionado);
+	Register btn_reg(clk_mod, rst, enable, btn, btn_seleccionado);
 	
 	drink_cost_module(btn_seleccionado, cost, display_cost);
 	
