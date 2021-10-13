@@ -1,13 +1,13 @@
-module sumador #( parameter BITS=4) 
-					(clk,rst,moneda100,moneda500,result,display);
+module Sumador #( parameter BITS=4) 
+					(seconds,rst,moneda100,moneda500,result,display);
 					
-		input logic clk,rst;
+		input logic seconds,rst;
 		input logic moneda100, moneda500;
 		output reg [BITS-1:0] result;
 		output logic [6:0]display;
 		
 		
-		clock_mod clk_mod(seconds, clk); 
+		
 		
 		
 		always @(posedge seconds or posedge rst)

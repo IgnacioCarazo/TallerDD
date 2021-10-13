@@ -1,9 +1,5 @@
 Flow report for Laboratorio4
-<<<<<<< Updated upstream
-Wed Oct 13 09:14:11 2021
-=======
-Wed Oct 13 08:51:22 2021
->>>>>>> Stashed changes
+Wed Oct 13 10:15:21 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,35 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< Updated upstream
-; Flow Status                     ; Successful - Wed Oct 13 09:14:10 2021       ;
-=======
-; Flow Status                     ; Successful - Wed Oct 13 08:51:07 2021       ;
->>>>>>> Stashed changes
+; Flow Status                     ; Successful - Wed Oct 13 10:15:21 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
-; Top-level Entity Name           ; sumador                                     ;
+; Top-level Entity Name           ; prueba                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-<<<<<<< Updated upstream
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 28                                          ;
-=======
-; Logic utilization (in ALMs)     ; 32 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 59                                          ;
-; Total pins                      ; 15 / 457 ( 3 % )                            ;
->>>>>>> Stashed changes
+; Total registers                 ; 44                                          ;
+; Total pins                      ; 37                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -82,11 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-<<<<<<< Updated upstream
-; Start date & time ; 10/13/2021 09:13:57 ;
-=======
-; Start date & time ; 10/13/2021 08:48:20 ;
->>>>>>> Stashed changes
+; Start date & time ; 10/13/2021 10:15:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Laboratorio4        ;
 +-------------------+---------------------+
@@ -97,19 +79,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-<<<<<<< Updated upstream
-; COMPILER_SIGNATURE_ID               ; 52243218829.163413443603084            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 52243218829.163413810007820            ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; prueba      ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; prueba      ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; prueba      ; Top        ;
-=======
-; COMPILER_SIGNATURE_ID               ; 46424948360995.163413649904536         ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; sumador     ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; sumador     ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; sumador     ; Top        ;
->>>>>>> Stashed changes
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; sumador                                ; Laboratorio4  ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; prueba                                 ; Laboratorio4  ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -118,16 +93,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< Updated upstream
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4783 MB             ; 00:00:17                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:17                           ;
-=======
-; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 4801 MB             ; 00:00:50                           ;
-; Fitter               ; 00:01:43     ; 1.0                     ; 6157 MB             ; 00:01:57                           ;
-; Assembler            ; 00:00:16     ; 1.0                     ; 4836 MB             ; 00:00:15                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.0                     ; 5082 MB             ; 00:00:11                           ;
-; Total                ; 00:02:55     ; --                      ; --                  ; 00:03:13                           ;
->>>>>>> Stashed changes
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4781 MB             ; 00:00:28                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -136,10 +103,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-J33VUR9  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -147,9 +111,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Laboratorio4 -c Laboratorio4
-quartus_fit --read_settings_files=off --write_settings_files=off Laboratorio4 -c Laboratorio4
-quartus_asm --read_settings_files=off --write_settings_files=off Laboratorio4 -c Laboratorio4
-quartus_sta Laboratorio4 -c Laboratorio4
 
 
 

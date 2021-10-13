@@ -4,47 +4,42 @@
 			"name" : "Top",
 			"pins" : [
 				{
-<<<<<<< Updated upstream
 					"name" : "display_time[1]",
-=======
-					"name" : "result[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[1]",
+					"name" : "display_time[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[2]",
+					"name" : "display_monto[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[3]",
+					"name" : "display_monto[1]",
 					"strict" : false
 				},
 				{
-					"name" : "display[0]",
+					"name" : "display_monto[2]",
 					"strict" : false
 				},
 				{
-					"name" : "display[1]",
+					"name" : "display_monto[3]",
 					"strict" : false
 				},
 				{
-					"name" : "display[2]",
+					"name" : "display_monto[4]",
 					"strict" : false
 				},
 				{
-					"name" : "display[3]",
->>>>>>> Stashed changes
+					"name" : "display_monto[5]",
 					"strict" : false
 				},
 				{
-					"name" : "display[4]",
+					"name" : "display_monto[6]",
 					"strict" : false
 				},
 				{
-<<<<<<< Updated upstream
 					"name" : "state[0]",
 					"strict" : false
 				},
@@ -58,12 +53,10 @@
 				},
 				{
 					"name" : "state[3]",
-=======
-					"name" : "display[5]",
 					"strict" : false
 				},
 				{
-					"name" : "display[6]",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
@@ -75,12 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
->>>>>>> Stashed changes
 					"strict" : false
 				}
 			]

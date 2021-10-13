@@ -1,6 +1,7 @@
 module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
-				  input logic [3:0]state, btn, // los estados ahorita se manejan por medio de switches (rojos) ya que la FSM necesita mejoras y los botones van de izq a der -> mocaccino/capuccino/c_leche/expresso
-				  output logic [6:0] display_cost, display_time, // Display del costo de la bebida y tambien de su tiempo (izquierda=costo/derecha=tiempo)
+				  input logic [3:0]state, btn,
+				  input logic moneda100, moneda500,// los estados ahorita se manejan por medio de switches (rojos) ya que la FSM necesita mejoras y los botones van de izq a der -> mocaccino/capuccino/c_leche/expresso
+				  output logic [6:0] display_cost, display_time, display_monto, // Display del costo de la bebida y tambien de su tiempo (izquierda=costo/derecha=tiempo)
 				  output logic [3:0] led // Estos leds muestran cual boton fue escogido de izquierda a derecha -> mocaccino/capuccino/c_leche/expresso
 				  );
 
@@ -12,6 +13,7 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 	reg seconds; 
 	reg [2:0]cost;
 	reg to;
+	reg alcanza;
 	
 	
 	
@@ -26,12 +28,16 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 	
 	sel_boton btn_or(btn, enable);
 	
+	Sumador sumador_monedas(seconds,rst,moneda100,moneda500,result,display_monto);
+	
 	
 	Register btn_reg(clk_mod, rst, enable, btn, btn_seleccionado);
 	
 	drink_cost_module bebida(btn_seleccionado, cost, display_cost);
 	
 	ing_serving_time_module modulo_tiempo_servido(btn_seleccionado, state, to, display_time);
+	
+	Comparator comparador_plata(cost, result, alcanza);
 	
 	
 	assign led[3:0] = ~btn_seleccionado;
