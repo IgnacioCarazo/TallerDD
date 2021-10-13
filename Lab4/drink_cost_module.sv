@@ -1,5 +1,5 @@
 module drink_cost_module(input logic [3:0]btn, // BOTON PULSADO
-								 output reg [2:0]cost, // COSTO DE LA BEBIDA SEGUN BOTON PULSADO
+								 output reg [3:0]cost, // COSTO DE LA BEBIDA SEGUN BOTON PULSADO
 								 output reg [6:0] hex_val); // DISPLAY TEMPORAL PARA VER QUE FUNCIONE
 								 
 	
@@ -22,28 +22,28 @@ module drink_cost_module(input logic [3:0]btn, // BOTON PULSADO
 		
 		  expreso: //300-3
 		  begin
-			cost = 3'b011;
+			cost = 4'b0011;
 			hex_val = 7'b0110000;
 		  end
 		  c_leche: //400-4
-		  begin
-			cost = 3'b100;
+		  begin 
+			cost = 4'b0100;
 			hex_val = 7'b0011001;
 		  end
 		  capuccino://500-5
 		  begin
-			cost = 3'b101;
+			cost = 4'b0101;
 			hex_val = 7'b0010010;
 		  end
 		  mocaccino://700-7
 		  begin
-			cost = 3'b111;
+			cost = 4'b0111;
 			hex_val = 7'b1111000;
 		  end
 		  
 			default:  begin 
-							cost = 3'b000;
-							hex_val = 7'b1111111;
+							cost = 3'b0000;
+							hex_val = 7'b1000000;
 						 end
 		endcase
     end 

@@ -1,0 +1,12 @@
+
+State Machine - |prueba|FSM:maquina_estados|state
+Name state.s_servir_azucar state.s_servir_chocolate state.s_servir_leche state.s_servir_cafe state.s_servir_agua state.s_devolver_dinero state.s_revisar_monto state.s_esperar_boton state.s_devolver_cambio 
+state.s_esperar_boton 0 0 0 0 0 0 0 0 0 
+state.s_revisar_monto 0 0 0 0 0 0 1 1 0 
+state.s_devolver_dinero 0 0 0 0 0 1 0 1 0 
+state.s_servir_agua 0 0 0 0 1 0 0 1 0 
+state.s_servir_cafe 0 0 0 1 0 0 0 1 0 
+state.s_servir_leche 0 0 1 0 0 0 0 1 0 
+state.s_servir_chocolate 0 1 0 0 0 0 0 1 0 
+state.s_servir_azucar 1 0 0 0 0 0 0 1 0 
+state.s_devolver_cambio 0 0 0 0 0 0 0 1 1 

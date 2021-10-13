@@ -2,7 +2,8 @@ module FSM (
   input clk, rst, enable, btn_pulsado, alcanza, // El enable es un booleano que va a decidir si puede avanzar de estado o no
   input logic[3:0] btn,
   
-  output logic[3:0] out
+  output logic[3:0] out,
+  output logic en
 );
   reg [3:0] state, next_state;
   
@@ -41,7 +42,7 @@ module FSM (
       
       s_devolver_dinero: next_state = s_esperar_boton;
       
-      s_servir_agua: if (enable) next_state = s_servir_cafe;
+      s_servir_agua: 	if (enable) next_state = s_servir_cafe;
 								else next_state = s_servir_agua;
     
       s_servir_cafe: if (enable & btn == expreso) next_state = s_servir_azucar;
@@ -79,36 +80,45 @@ module FSM (
       case (state)
 		
 		s_esperar_boton: begin
+								en = 1'b0;
 								out = s_esperar_boton;
 								end
       
       s_revisar_monto: begin
+						en = 1'b0;
         			   out = s_revisar_monto;
      				  end
       
       s_devolver_dinero: begin
+						en = 1'b0;
         			   out = s_devolver_dinero;
      				  end
       
       s_servir_agua: begin
+								en = 1'b1;
 								out = s_servir_agua;
 	   				 end
       
       s_servir_cafe: begin
+					 en = 1'b1;
         		    out = s_servir_cafe;
      				end
       
       s_servir_leche: begin
+							en = 1'b1;
         			      out = s_servir_leche;
      				  end
       
       s_servir_chocolate:  begin
+						 en = 1'b1;
         		       out = s_servir_chocolate;
      			   end
       s_servir_azucar:  begin
+							en = 1'b1;
           				out = s_servir_azucar;
         				end
       s_devolver_cambio:  begin
+							 en = 1'b0;
          				 out = s_devolver_cambio;
         					end
 							

@@ -1,6 +1,6 @@
 module ing_serving_time_module(input logic [3:0]btn, // BOTON ESTRIPADO
 										 input logic [3:0]state, // ESTADO ACTUAL
-										 output logic to, // TIEMPO DE SERVIDO
+										 output logic [3:0]to, // TIEMPO DE SERVIDO
 										 output reg [6:0] hex_val); //TEMPORAL PARA MOSTRAR EN DISPLAY SI FUNCIONA
 										 
 										 
@@ -32,17 +32,17 @@ module ing_serving_time_module(input logic [3:0]btn, // BOTON ESTRIPADO
 					if (btn == mocaccino) 
 			 begin
 					hex_val = 7'b1111001;
-					//to = '1seg';
+					to = 4'b0001;
 				end
 			 else if (btn == c_leche | btn == capuccino | btn == expreso)
 				begin
 					hex_val = 7'b0100100;
-					//to ='2seg';
+					to =4'b0010;
 				end
 			 else
 				begin
-					hex_val = 7'b1111111;
-					//to = '0seg';
+					hex_val = 7'b1000000;
+					to = 4'b0000;
 				end
 			  
 		  
@@ -51,17 +51,17 @@ module ing_serving_time_module(input logic [3:0]btn, // BOTON ESTRIPADO
 			  if (btn == expreso)
 				begin
 					hex_val = 7'b0110000;
-					//to = '3seg';
+					to = 4'b0011;
 				end
 			 else if (btn == c_leche | btn == capuccino)
 				begin
 					hex_val = 7'b0100100;
-					//to = '2seg';
+					to =4'b0010;
 				end
 			 else 
 				begin
 					hex_val = 7'b1111001;
-					//to = '1seg'
+					to = 4'b0001;
 				end
 		  
 		  s_servir_leche:
@@ -69,17 +69,17 @@ module ing_serving_time_module(input logic [3:0]btn, // BOTON ESTRIPADO
 			  if (btn == c_leche)
 				begin
 					hex_val = 7'b0100100;
-					//to = '2seg';
+					to =4'b0010;
 				end
 			 else if (btn == capuccino)
 				begin
 					hex_val = 7'b1111001;
-					//to = '1seg';
+					to = 4'b0001;
 				end
 			 else 
 				begin
-					hex_val = 7'b1111111;
-					//to = '0seg';
+					hex_val = 7'b1000000;
+					to = 4'b0000;
 				end
 		  
 		  s_servir_chocolate:
@@ -87,12 +87,12 @@ module ing_serving_time_module(input logic [3:0]btn, // BOTON ESTRIPADO
 				if (btn == mocaccino)  
 					begin
 						hex_val = 7'b0100100;
-						//to = '2s';
+						to =4'b0010;
 					end
 				else
 					begin
-						hex_val = 7'b1111111;
-						//to = '0seg';
+						hex_val = 7'b1000000;
+						to = 4'b0000;
 					end
 					
 				
@@ -101,16 +101,18 @@ module ing_serving_time_module(input logic [3:0]btn, // BOTON ESTRIPADO
 				if (btn == c_leche | btn == capuccino | btn == expreso | btn == mocaccino)
 					begin
 						hex_val = 7'b1111001;
-						//to = '1s';
+						to = 4'b0001;
 					end
 				else
 					begin 
-							hex_val = 7'b1111111;
+							hex_val = 7'b1000000;
+							to = 4'b0000;
 					end
 		  
 		  
 			default:  begin 
-							hex_val = 7'b1111111;
+							hex_val = 7'b1000000;
+							to = 4'b0000;
 						 end
 		endcase
     end 

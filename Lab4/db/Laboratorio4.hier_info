@@ -1,10 +1,10 @@
 |prueba
 clk => clk.IN1
-rst => rst.IN2
-state[0] => state[0].IN1
-state[1] => state[1].IN1
-state[2] => state[2].IN1
-state[3] => state[3].IN1
+rst => rst.IN3
+state[0] => ~NO_FANOUT~
+state[1] => ~NO_FANOUT~
+state[2] => ~NO_FANOUT~
+state[3] => ~NO_FANOUT~
 btn[0] => btn[0].IN2
 btn[1] => btn[1].IN2
 btn[2] => btn[2].IN2
@@ -36,6 +36,53 @@ led[0] << btn_seleccionado[0].DB_MAX_OUTPUT_PORT_TYPE
 led[1] << btn_seleccionado[1].DB_MAX_OUTPUT_PORT_TYPE
 led[2] << btn_seleccionado[2].DB_MAX_OUTPUT_PORT_TYPE
 led[3] << btn_seleccionado[3].DB_MAX_OUTPUT_PORT_TYPE
+led_alcanza << alcanza.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|FSM:maquina_estados
+clk => state~1.DATAIN
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+enable => always0.IN1
+enable => always0.IN1
+enable => Selector2.IN3
+enable => next_state.DATAA
+enable => next_state.DATAA
+enable => Selector5.IN5
+enable => next_state.s_devolver_cambio.DATAB
+enable => Selector1.IN1
+enable => next_state.DATAA
+enable => next_state.DATAA
+enable => Selector4.IN1
+enable => Selector5.IN1
+btn_pulsado => next_state.s_revisar_monto.DATAB
+btn_pulsado => Selector0.IN2
+alcanza => Selector1.IN3
+alcanza => next_state.s_devolver_dinero.DATAB
+btn[0] => Equal0.IN3
+btn[0] => Equal1.IN2
+btn[0] => Equal2.IN2
+btn[1] => Equal0.IN2
+btn[1] => Equal1.IN3
+btn[1] => Equal2.IN1
+btn[2] => Equal0.IN1
+btn[2] => Equal1.IN1
+btn[2] => Equal2.IN3
+btn[3] => Equal0.IN0
+btn[3] => Equal1.IN0
+btn[3] => Equal2.IN0
+out[0] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+en <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |prueba|clock_mod:clk_mod
@@ -170,63 +217,118 @@ btn[3] => Decoder0.IN0
 cost[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 cost[1] <= cost.DB_MAX_OUTPUT_PORT_TYPE
 cost[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+cost[3] <= <GND>
+hex_val[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[2] <= <GND>
 hex_val[3] <= hex_val.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[4] <= <VCC>
-hex_val[5] <= hex_val.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[5] <= cost.DB_MAX_OUTPUT_PORT_TYPE
 hex_val[6] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |prueba|ing_serving_time_module:modulo_tiempo_servido
-btn[0] => Equal0.IN0
-btn[0] => Equal1.IN3
-btn[0] => Equal2.IN3
-btn[0] => Equal3.IN3
-btn[1] => Equal0.IN3
-btn[1] => Equal1.IN2
-btn[1] => Equal2.IN0
-btn[1] => Equal3.IN2
-btn[2] => Equal0.IN2
-btn[2] => Equal1.IN0
-btn[2] => Equal2.IN2
-btn[2] => Equal3.IN1
-btn[3] => Equal0.IN1
-btn[3] => Equal1.IN1
-btn[3] => Equal2.IN1
-btn[3] => Equal3.IN0
+btn[0] => Equal0.IN3
+btn[0] => Equal1.IN2
+btn[0] => Equal2.IN2
+btn[0] => Equal3.IN2
+btn[1] => Equal0.IN2
+btn[1] => Equal1.IN1
+btn[1] => Equal2.IN3
+btn[1] => Equal3.IN1
+btn[2] => Equal0.IN1
+btn[2] => Equal1.IN3
+btn[2] => Equal2.IN1
+btn[2] => Equal3.IN0
+btn[3] => Equal0.IN0
+btn[3] => Equal1.IN0
+btn[3] => Equal2.IN0
+btn[3] => Equal3.IN3
 state[0] => Mux0.IN19
 state[0] => Mux1.IN19
 state[0] => Mux2.IN19
 state[0] => Mux3.IN19
 state[0] => Mux4.IN19
 state[0] => Mux5.IN19
+state[0] => Mux6.IN19
+state[0] => Mux7.IN19
 state[1] => Mux0.IN18
 state[1] => Mux1.IN18
 state[1] => Mux2.IN18
 state[1] => Mux3.IN18
 state[1] => Mux4.IN18
 state[1] => Mux5.IN18
+state[1] => Mux6.IN18
+state[1] => Mux7.IN18
 state[2] => Mux0.IN17
 state[2] => Mux1.IN17
 state[2] => Mux2.IN17
 state[2] => Mux3.IN17
 state[2] => Mux4.IN17
 state[2] => Mux5.IN17
+state[2] => Mux6.IN17
+state[2] => Mux7.IN17
 state[3] => Mux0.IN16
 state[3] => Mux1.IN16
 state[3] => Mux2.IN16
 state[3] => Mux3.IN16
 state[3] => Mux4.IN16
 state[3] => Mux5.IN16
-to <= <GND>
+state[3] => Mux6.IN16
+state[3] => Mux7.IN16
+to[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+to[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+to[2] <= <GND>
+to[3] <= <GND>
 hex_val[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-hex_val[5] <= <VCC>
+hex_val[1] <= <GND>
+hex_val[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex_val[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 hex_val[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Comparator:comparador_plata
+A[0] => LessThan0.IN4
+A[1] => LessThan0.IN3
+A[2] => LessThan0.IN2
+A[3] => LessThan0.IN1
+B[0] => LessThan0.IN8
+B[1] => LessThan0.IN7
+B[2] => LessThan0.IN6
+B[3] => LessThan0.IN5
+equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Counter:contador
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+rst => Q[0]~reg0.ACLR
+rst => Q[1]~reg0.ACLR
+rst => Q[2]~reg0.ACLR
+rst => Q[3]~reg0.ACLR
+en => Q[0]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prueba|Comparator:comparador_tiempos
+A[0] => LessThan0.IN4
+A[1] => LessThan0.IN3
+A[2] => LessThan0.IN2
+A[3] => LessThan0.IN1
+B[0] => LessThan0.IN8
+B[1] => LessThan0.IN7
+B[2] => LessThan0.IN6
+B[3] => LessThan0.IN5
+equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,6 +1,6 @@
-module Comparator #(parameter N = 8)(input logic [N-1:0] A,B,
+module Comparator #(parameter N = 4)(input logic [N-1:0] A,B,
 												 output logic equal);
 												 
-assign equal = (A == B);
+assign equal = (A >= B);
 
 endmodule
