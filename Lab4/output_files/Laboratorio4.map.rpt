@@ -1,5 +1,9 @@
 Analysis & Synthesis report for Laboratorio4
+<<<<<<< Updated upstream
 Wed Oct 13 09:14:11 2021
+=======
+Wed Oct 13 08:49:00 2021
+>>>>>>> Stashed changes
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,6 +17,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
+<<<<<<< Updated upstream
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Parameter Settings for User Entity Instance: Register:btn_reg
@@ -25,6 +30,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  17. Post-Synthesis Netlist Statistics for Top Partition
  18. Elapsed Time Per Partition
  19. Analysis & Synthesis Messages
+=======
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |sumador
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
+>>>>>>> Stashed changes
 
 
 
@@ -51,14 +66,23 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis Status     ; Successful - Wed Oct 13 09:14:10 2021       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Wed Oct 13 08:49:00 2021       ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
-; Top-level Entity Name           ; prueba                                      ;
+; Top-level Entity Name           ; sumador                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
+<<<<<<< Updated upstream
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 28                                          ;
+=======
+; Total registers                 ; 44                                          ;
+; Total pins                      ; 15                                          ;
+>>>>>>> Stashed changes
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -77,7 +101,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; prueba             ; Laboratorio4       ;
+; Top-level entity name                                                           ; sumador            ; Laboratorio4       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -167,13 +191,15 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
+<<<<<<< Updated upstream
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                 ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
@@ -223,6 +249,53 @@ https://fpgasoftware.intel.com/eula.
 ; |prueba                                            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 28   ; 0            ; |prueba                                               ; prueba                  ; work         ;
 ;    |ing_serving_time_module:modulo_tiempo_servido| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |prueba|ing_serving_time_module:modulo_tiempo_servido ; ing_serving_time_module ; work         ;
 +----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
+=======
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; sumador.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sumador.sv   ;         ;
+; clock_mod.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/clock_mod.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 31        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 52        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 10        ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 7         ;
+;     -- <=3 input functions                  ; 35        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 44        ;
+;                                             ;           ;
+; I/O pins                                    ; 15        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 33        ;
+; Total fan-out                               ; 312       ;
+; Average fan-out                             ; 2.48      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
+; |sumador                   ; 52 (11)             ; 44 (11)                   ; 0                 ; 0          ; 15   ; 0            ; |sumador                   ; sumador     ; work         ;
+;    |clock_mod:clk_mod|     ; 41 (41)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |sumador|clock_mod:clk_mod ; clock_mod   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
+>>>>>>> Stashed changes
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,16 +314,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
+<<<<<<< Updated upstream
 ; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
+=======
+; Total registers                              ; 44    ;
+; Number of registers using Synchronous Clear  ; 31    ;
+>>>>>>> Stashed changes
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
+<<<<<<< Updated upstream
 ; Number of registers using Clock Enable       ; 0     ;
+=======
+; Number of registers using Clock Enable       ; 7     ;
+>>>>>>> Stashed changes
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
+<<<<<<< Updated upstream
 +---------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Register:btn_reg ;
 +----------------+-------+--------------------------------------+
@@ -328,11 +411,43 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
+=======
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; clock_mod:clk_mod|count[0]             ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |sumador|result[1]~reg0    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |sumador ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; BITS           ; 4     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
+>>>>>>> Stashed changes
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+<<<<<<< Updated upstream
 ; arriav_lcell_comb     ; 4                           ;
 ;     normal            ; 4                           ;
 ;         0 data inputs ; 2                           ;
@@ -342,6 +457,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
 ; Average LUT depth     ; 1.50                        ;
+=======
+; arriav_ff             ; 44                          ;
+;     CLR               ; 4                           ;
+;     ENA               ; 7                           ;
+;     SCLR              ; 31                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 52                          ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 32                          ;
+;     normal            ; 20                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
+;         4 data inputs ; 7                           ;
+;         6 data inputs ; 10                          ;
+; boundary_port         ; 15                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.72                        ;
+>>>>>>> Stashed changes
 +-----------------------+-----------------------------+
 
 
@@ -350,7 +484,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
+<<<<<<< Updated upstream
 ; Top            ; 00:00:00     ;
+=======
+; Top            ; 00:00:02     ;
+>>>>>>> Stashed changes
 +----------------+--------------+
 
 
@@ -360,35 +498,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Wed Oct 13 09:13:56 2021
+=======
+    Info: Processing started: Wed Oct 13 08:48:16 2021
+>>>>>>> Stashed changes
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio4 -c Laboratorio4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: Counter File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Counter.sv Line: 1
+    Info (12023): Found entity 1: Counter File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: Register File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Register.sv Line: 1
+    Info (12023): Found entity 1: Register File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Register.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
-    Info (12023): Found entity 1: Comparator File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Comparator.sv Line: 1
+    Info (12023): Found entity 1: Comparator File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Comparator.sv Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file n_bit_adder.sv
-    Info (12023): Found entity 1: N_bit_adder File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/N_bit_adder.sv Line: 4
-    Info (12023): Found entity 2: half_adder File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/N_bit_adder.sv Line: 28
-    Info (12023): Found entity 3: full_adder File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/N_bit_adder.sv Line: 38
+    Info (12023): Found entity 1: N_bit_adder File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/N_bit_adder.sv Line: 4
+    Info (12023): Found entity 2: half_adder File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/N_bit_adder.sv Line: 28
+    Info (12023): Found entity 3: full_adder File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/N_bit_adder.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file ing_serving_time_module.sv
-    Info (12023): Found entity 1: ing_serving_time_module File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/ing_serving_time_module.sv Line: 1
+    Info (12023): Found entity 1: ing_serving_time_module File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/ing_serving_time_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file drink_cost_module.sv
-    Info (12023): Found entity 1: drink_cost_module File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/drink_cost_module.sv Line: 1
+    Info (12023): Found entity 1: drink_cost_module File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/drink_cost_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sel_boton.sv
-    Info (12023): Found entity 1: sel_boton File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/sel_boton.sv Line: 1
+    Info (12023): Found entity 1: sel_boton File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sel_boton.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_cafe.sv
-    Info (12023): Found entity 1: maquina_cafe File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/maquina_cafe.sv Line: 1
+    Info (12023): Found entity 1: maquina_cafe File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/maquina_cafe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file prueba.sv
-    Info (12023): Found entity 1: prueba File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Sumador.sv Line: 1
+    Info (12023): Found entity 1: prueba File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registersumador.sv
+<<<<<<< Updated upstream
     Info (12023): Found entity 1: RegisterSumador File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/RegisterSumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_mod.sv
     Info (12023): Found entity 1: clock_mod File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/clock_mod.sv Line: 1
@@ -417,9 +558,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led[1]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
     Warning (13410): Pin "led[2]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
     Warning (13410): Pin "led[3]" is stuck at GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 5
+=======
+    Info (12023): Found entity 1: RegisterSumador File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/RegisterSumador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sumador.sv
+    Info (12023): Found entity 1: sumador File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sumador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_mod.sv
+    Info (12023): Found entity 1: clock_mod File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/clock_mod.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at sumador.sv(10): created implicit net for "seconds" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sumador.sv Line: 10
+Info (12127): Elaborating entity "sumador" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at sumador.sv(22): truncated value with size 32 to match size of target (4) File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sumador.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at sumador.sv(25): truncated value with size 32 to match size of target (4) File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sumador.sv Line: 25
+Info (12128): Elaborating entity "clock_mod" for hierarchy "clock_mod:clk_mod" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/sumador.sv Line: 10
+>>>>>>> Stashed changes
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/output_files/Laboratorio4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+<<<<<<< Updated upstream
 Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clk" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 1
     Warning (15610): No output dependent on input pin "rst" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/prueba.sv Line: 1
@@ -436,5 +591,22 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
     Info: Processing ended: Wed Oct 13 09:14:11 2021
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:17
+=======
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 52 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Wed Oct 13 08:49:00 2021
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:00:50
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/output_files/Laboratorio4.map.smsg.
+>>>>>>> Stashed changes
 
 

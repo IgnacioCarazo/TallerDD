@@ -29,7 +29,7 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 	
 	Register btn_reg(clk_mod, rst, enable, btn, btn_seleccionado);
 	
-	drink_cost_module(btn_seleccionado, cost, display_cost);
+	drink_cost_module bebida(btn_seleccionado, cost, display_cost);
 	
 	ing_serving_time_module modulo_tiempo_servido(btn_seleccionado, state, to, display_time);
 	

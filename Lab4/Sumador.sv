@@ -1,21 +1,69 @@
 module sumador #( parameter BITS=4) 
-					(input logic [1:0]Monedas, 
-					output reg [BITS-1:0]Result);
+					(clk,rst,moneda100,moneda500,result,display);
 					
-		always @(*)
-		begin
+		input logic clk,rst;
+		input logic moneda100, moneda500;
+		output reg [BITS-1:0] result;
+		output logic [6:0]display;
 		
-			case(Monedas)
+		
+		clock_mod clk_mod(seconds, clk); 
+		
+		
+		always @(posedge seconds or posedge rst)
+		
+
+		if (rst) result <= 0;
+		
+		else begin
+			if(moneda100) begin 
+		
+			if (result < 10) 
+			result <= result +1;
+			end
+		else if (moneda500) begin 
+			if (result < 6) result<= result + 5;
+			end 
+
+
 			
-			2'b01:
-				assign Result=Result+3'b001;
-				
-			2'b10:
-				assign Result=Result+3'b101;
-			
-			endcase
+		case (result)
+			4'b0000 :      	//Hexadecimal 0
+			display = 7'b1000000;
+			4'b0001 :    		//Hexadecimal 1
+			display = 7'b1111001  ;
+			4'b0010 :  		// Hexadecimal 2
+			display = 7'b0100100 ; 
+			4'b0011 : 		// Hexadecimal 3
+			display = 7'b0110000 ;
+			4'b0100 :		// Hexadecimal 4
+			display = 7'b0011001;
+			4'b0101 :		// Hexadecimal 5
+			display = 7'b0010010 ;  
+			4'b0110 :		// Hexadecimal 6
+			display = 7'b0000010;
+			4'b0111 :		// Hexadecimal 7
+			display = 7'b1111000;
+			4'b1000 :     		 //Hexadecimal 8
+			display = 7'b0000000;
+			4'b1001 :    		//Hexadecimal 9
+			display = 7'b0010000;
+			4'b1010 :  		// Hexadecimal A
+			display = 7'b0001000; 
+			4'b1011 : 		// Hexadecimal B
+			display = 7'b0000011;
+			4'b1100 :		// Hexadecimal C
+			display = 7'b1000110;
+			4'b1101 :		// Hexadecimal D
+			display = 7'b0100001;
+			4'b1110 :		// Hexadecimal E
+			display = 7'b0000110;
+			4'b1111 :		// Hexadecimal F
+			display = 7'b0001110;
+		endcase
 			
 		end
+		
 
 endmodule
 

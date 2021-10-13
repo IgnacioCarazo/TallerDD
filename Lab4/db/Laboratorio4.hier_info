@@ -1,35 +1,42 @@
-|prueba
+|sumador
 clk => clk.IN1
-rst => rst.IN1
-state[0] => state[0].IN1
-state[1] => state[1].IN1
-state[2] => state[2].IN1
-state[3] => state[3].IN1
-btn[0] => btn[0].IN2
-btn[1] => btn[1].IN2
-btn[2] => btn[2].IN2
-btn[3] => btn[3].IN2
-display_cost[0] <= drink_cost_module:comb_3.port2
-display_cost[1] <= drink_cost_module:comb_3.port2
-display_cost[2] <= drink_cost_module:comb_3.port2
-display_cost[3] <= drink_cost_module:comb_3.port2
-display_cost[4] <= drink_cost_module:comb_3.port2
-display_cost[5] <= drink_cost_module:comb_3.port2
-display_cost[6] <= drink_cost_module:comb_3.port2
-display_time[0] <= ing_serving_time_module:modulo_tiempo_servido.port3
-display_time[1] <= ing_serving_time_module:modulo_tiempo_servido.port3
-display_time[2] <= ing_serving_time_module:modulo_tiempo_servido.port3
-display_time[3] <= ing_serving_time_module:modulo_tiempo_servido.port3
-display_time[4] <= ing_serving_time_module:modulo_tiempo_servido.port3
-display_time[5] <= ing_serving_time_module:modulo_tiempo_servido.port3
-display_time[6] <= ing_serving_time_module:modulo_tiempo_servido.port3
-led[0] <= btn_seleccionado[0].DB_MAX_OUTPUT_PORT_TYPE
-led[1] <= btn_seleccionado[1].DB_MAX_OUTPUT_PORT_TYPE
-led[2] <= btn_seleccionado[2].DB_MAX_OUTPUT_PORT_TYPE
-led[3] <= btn_seleccionado[3].DB_MAX_OUTPUT_PORT_TYPE
+rst => result[0]~reg0.ACLR
+rst => result[1]~reg0.ACLR
+rst => result[2]~reg0.ACLR
+rst => result[3]~reg0.ACLR
+rst => display[6]~reg0.ENA
+rst => display[5]~reg0.ENA
+rst => display[4]~reg0.ENA
+rst => display[3]~reg0.ENA
+rst => display[2]~reg0.ENA
+rst => display[1]~reg0.ENA
+rst => display[0]~reg0.ENA
+moneda100 => result.OUTPUTSELECT
+moneda100 => result.OUTPUTSELECT
+moneda100 => result.OUTPUTSELECT
+moneda100 => result.OUTPUTSELECT
+moneda500 => result.OUTPUTSELECT
+moneda500 => result.OUTPUTSELECT
+moneda500 => result.OUTPUTSELECT
+moneda500 => result.OUTPUTSELECT
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= display[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= display[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< Updated upstream
 |prueba|clock_mod:clk_mod
+=======
+|sumador|clock_mod:clk_mod
+>>>>>>> Stashed changes
 seconds <= seconds~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk => seconds~reg0.CLK
 clk => count[0].CLK
@@ -64,6 +71,7 @@ clk => count[28].CLK
 clk => count[29].CLK
 clk => count[30].CLK
 clk => count[31].CLK
+<<<<<<< Updated upstream
 
 
 |prueba|sel_boton:btn_or
@@ -175,5 +183,7 @@ hex_val[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 hex_val[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 hex_val[5] <= <VCC>
 hex_val[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+>>>>>>> Stashed changes
 
 
