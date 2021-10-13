@@ -3,26 +3,24 @@ module Sumador #( parameter BITS=4)
 					
 		input logic seconds,rst;
 		input logic moneda100, moneda500;
-		output reg [BITS-1:0] result;
+		output reg [3:0] result;
 		output logic [6:0]display;
 		
 		
-		
-		
-		
+				
 		always @(posedge seconds or posedge rst)
 		
 
-		if (rst) result <= 0;
+		if (rst) result <= 4'b0000;
 		
 		else begin
 			if(moneda100) begin 
 		
-			if (result < 10) 
-			result <= result +1;
+			if (result < 4'b1010) 
+			result = result +4'b0001;
 			end
 		else if (moneda500) begin 
-			if (result < 6) result<= result + 5;
+			if (result < 4'b0110) result= result + 4'b0101;
 			end 
 
 

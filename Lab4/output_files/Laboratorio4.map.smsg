@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at Sumador.sv(13): always construct contains both blocking and non-blocking assignments File: C:/Users/Ignacio Carazo/Desktop/TallerDD/Lab4/Sumador.sv Line: 13
+Warning (10268): Verilog HDL information at Sumador.sv(11): always construct contains both blocking and non-blocking assignments File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/Sumador.sv Line: 11

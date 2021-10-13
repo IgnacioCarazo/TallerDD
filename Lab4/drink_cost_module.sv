@@ -42,7 +42,7 @@ module drink_cost_module(input logic [3:0]btn, // BOTON PULSADO
 		  end
 		  
 			default:  begin 
-							cost = 3'b0000;
+							cost = 4'b0000;
 							hex_val = 7'b1000000;
 						 end
 		endcase
