@@ -15,14 +15,6 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 	reg [3:0]cost, result,outFSM;
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	// Descomentar para probar modulo de de servido de ingredientes
 	// Dependiendo del estado que se maneja con los switches y el btn estripado muestra el tiempo en display
 	

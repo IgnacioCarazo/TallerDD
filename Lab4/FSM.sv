@@ -71,7 +71,7 @@ module FSM (
   
   //Memoria
   always_ff @(posedge clk) begin
-    if (!rst) state = s_esperar_boton;
+    if (rst) state = s_esperar_boton;
     else state = next_state;
   end
   
