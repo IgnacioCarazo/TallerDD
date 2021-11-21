@@ -1,0 +1,34 @@
+module FSM(input clk, rst, fin, igual, pFin, inicio
+				output instancias);
+				
+logic [2:0] state, next_state;
+
+//actual state
+always_ff @(posedge clk or posedge rst)
+	if(rst) state = 3'd0;
+	else
+		state = next_state;
+		
+//next state
+
+always_comb
+	case(state)
+	3'd0: next_state = 3'd7;
+	3'd1: if(fin) next_state = 3d'7; else next_state = 3'd2;
+	3'd2: if(igual) next_state = 3'd4; else next_state = 3'd3;
+	3'd3: next_state = 3'd1
+	3'd4: if(pFin) next_state = 3d'6; else next_state = 3'd5;
+	3'd5: next_state = 3'd1
+	3'd6: next_state = 3'd1
+	3'd7: if(inicio) next_state = 3'd0; else next_state = 3'd7;
+	default: next_state = 2'b00;
+	endcase
+	
+//outputs
+
+assign set_Iniciales = (state == 3'd0);
+assign patron_no = (state == 3'd3);
+assign patron_si = (state == 3'd5);
+assign patron_fin = (state == 3'd6);
+
+endmodule

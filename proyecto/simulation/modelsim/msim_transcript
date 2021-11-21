@@ -1,0 +1,122 @@
+# Reading pref.tcl
+# do AlgoritmosBusqueda_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto {C:/Users/viviv/Desktop/taller/proyecto/rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:33:22 on Nov 19,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/viviv/Desktop/taller/proyecto" C:/Users/viviv/Desktop/taller/proyecto/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 17:33:22 on Nov 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto {C:/Users/viviv/Desktop/taller/proyecto/text_rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:33:23 on Nov 19,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/viviv/Desktop/taller/proyecto" C:/Users/viviv/Desktop/taller/proyecto/text_rom.v 
+# -- Compiling module text_rom
+# 
+# Top level modules:
+# 	text_rom
+# End time: 17:33:23 on Nov 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto {C:/Users/viviv/Desktop/taller/proyecto/FSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:33:23 on Nov 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/viviv/Desktop/taller/proyecto" C:/Users/viviv/Desktop/taller/proyecto/FSM.sv 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 17:33:24 on Nov 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto {C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:33:24 on Nov 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/viviv/Desktop/taller/proyecto" C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv 
+# -- Compiling module FuerzaBruta
+# 
+# Top level modules:
+# 	FuerzaBruta
+# End time: 17:33:24 on Nov 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto {C:/Users/viviv/Desktop/taller/proyecto/Comparator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:33:24 on Nov 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/viviv/Desktop/taller/proyecto" C:/Users/viviv/Desktop/taller/proyecto/Comparator.sv 
+# -- Compiling module Comparator
+# 
+# Top level modules:
+# 	Comparator
+# End time: 17:33:24 on Nov 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto {C:/Users/viviv/Desktop/taller/proyecto/Counter2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:33:24 on Nov 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/viviv/Desktop/taller/proyecto" C:/Users/viviv/Desktop/taller/proyecto/Counter2.sv 
+# -- Compiling module Counter2
+# 
+# Top level modules:
+# 	Counter2
+# End time: 17:33:24 on Nov 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -L altera_mf_ver -L lpm_ver FuerzaBruta
+# vsim -L altera_mf_ver -L lpm_ver FuerzaBruta 
+# Start time: 17:33:41 on Nov 19,2021
+# Loading sv_std.std
+# Loading work.FuerzaBruta
+# Loading work.FSM
+# Loading work.Comparator
+# Loading work.Counter2
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.text_rom
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'A'. The port definition is at: C:/Users/viviv/Desktop/taller/proyecto/Comparator.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /FuerzaBruta/finTexto File: C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (3) for port 'Q'. The port definition is at: C:/Users/viviv/Desktop/taller/proyecto/Counter2.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /FuerzaBruta/contador_patron File: C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv Line: 26
+add wave -position end  sim:/FuerzaBruta/clk
+add wave -position end  sim:/FuerzaBruta/rst
+add wave -position end  sim:/FuerzaBruta/fin
+add wave -position end  sim:/FuerzaBruta/igual
+add wave -position end  sim:/FuerzaBruta/pFin
+add wave -position end  sim:/FuerzaBruta/inicio
+add wave -position end  sim:/FuerzaBruta/set_Iniciales
+add wave -position end  sim:/FuerzaBruta/patron_no
+add wave -position end  sim:/FuerzaBruta/patron_si
+add wave -position end  sim:/FuerzaBruta/patron_fin
+add wave -position end  sim:/FuerzaBruta/sumatexto
+add wave -position end  sim:/FuerzaBruta/patron_cero
+add wave -position end  sim:/FuerzaBruta/patron_texto_suma
+add wave -position end  sim:/FuerzaBruta/text_suma
+add wave -position end  sim:/FuerzaBruta/actual_state
+add wave -position end  sim:/FuerzaBruta/address_patron
+add wave -position end  sim:/FuerzaBruta/address_texto
+add wave -position end  sim:/FuerzaBruta/start
+add wave -position end  sim:/FuerzaBruta/patron
+add wave -position end  sim:/FuerzaBruta/texto
+add wave -position end  sim:/FuerzaBruta/instancias
+force -freeze sim:/FuerzaBruta/clk 1 0, 0 {5 ps} -r 10
+force -freeze sim:/FuerzaBruta/rst 1 0
+run 100
+force -freeze sim:/FuerzaBruta/rst 0 0
+run 1000
+run 100
+run 1000
+run 1000
+# End time: 17:36:38 on Nov 19,2021, Elapsed time: 0:02:57
+# Errors: 0, Warnings: 2

@@ -1,0 +1,7 @@
+module rom_tb();
+
+logic [2:0]  address;
+logic  clock;
+logic [7:0]  q;
+
+rom mem(address, clk, q);

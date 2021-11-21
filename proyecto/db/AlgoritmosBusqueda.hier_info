@@ -1,0 +1,25 @@
+|FSMKMP
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+finTexto => Selector0.IN3
+finTexto => next_state.0011.DATAB
+inicio => next_state.0000.DATAB
+inicio => Selector0.IN1
+igual => next_state.0101.DATAB
+igual => next_state.0111.DATAB
+finPatron => next_state.0110.DATAB
+finPatron => Selector1.IN2
+menor0 => next_state.1001.DATAB
+menor0 => next_state.1000.DATAB
+set_Iniciales << set_Iniciales.DB_MAX_OUTPUT_PORT_TYPE
+sumaTextoPatron << sumaTextoPatron.DB_MAX_OUTPUT_PORT_TYPE
+rstPatron << rstPatron.DB_MAX_OUTPUT_PORT_TYPE
+sumaInstancia << sumaInstancia.DB_MAX_OUTPUT_PORT_TYPE
+posPorT << posPorT.DB_MAX_OUTPUT_PORT_TYPE
+sumaTexto << sumaTexto.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[0] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[1] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[2] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[3] << actual_state.DB_MAX_OUTPUT_PORT_TYPE
+
+

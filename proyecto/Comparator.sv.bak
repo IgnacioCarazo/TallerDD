@@ -1,0 +1,6 @@
+module Comparator #(parameter N = 8) 
+						(input [5:0] A, B,
+						output equal);
+						
+assign equal = (A==B);
+endmodule

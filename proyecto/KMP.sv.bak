@@ -1,0 +1,37 @@
+module KMP();
+
+logic clk, rst, finTexto, inicio, igual, finPatron, menor0;
+logic set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT;
+logic [3:0] actual_state;
+
+
+logic clk, rst, fin, igual, pFin, inicio;
+logic set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma;
+logic [3:0] actual_state;						  
+						  
+logic [2:0]  address_patron;
+logic [7:0]  address_texto;
+logic [7:0]  patron;
+logic [7:0]  texto;
+logic [7:0]  instancias;
+
+FSM FSMKMP(clk, rst, finTexto, inicio, igual, finPatron, menor0, set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, actual_state);
+
+
+Comparator finTexto(7'd55, address_texto, fin);
+
+Comparator letraIgual(patron, texto, igual);
+
+Comparator #(3) finPatron(3'b100, address_patron, patron_fin);
+
+Counter2 contador_instancias(clk, rst, sumaInstancia, instancias);
+
+GreaterAThanB #(3) menor0(3'd0, address_patron, menor0);
+
+rom patron_mem(address_patron, clk, patron);
+Counter2 contador_patron(clk, rst, patron_si, address_patron);
+
+text_rom mem_text(address_texto, clk, texto);
+Counter2 contador_text(clk, rst, patron_si, address_texto);
+
+endmodule 

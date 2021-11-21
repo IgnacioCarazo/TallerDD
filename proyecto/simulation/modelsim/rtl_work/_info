@@ -1,0 +1,167 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/viviv/Desktop/taller/proyecto/simulation/modelsim
+vComparator
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1637364804
+!i10b 1
+!s100 7=Ub`=?GjKTL`lNfizMbR1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I6>h0<98zhH1iXk9A;gh[m2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1635997072
+8C:/Users/viviv/Desktop/taller/proyecto/Comparator.sv
+FC:/Users/viviv/Desktop/taller/proyecto/Comparator.sv
+!i122 4
+L0 1 6
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1637364804.000000
+!s107 C:/Users/viviv/Desktop/taller/proyecto/Comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/viviv/Desktop/taller/proyecto|C:/Users/viviv/Desktop/taller/proyecto/Comparator.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto
+Z9 tCvgOpt 0
+n@comparator
+vCounter2
+R1
+R2
+!i10b 1
+!s100 ;Cdn:0IYEVN:_acEA_Aob2
+R3
+I0RjQHmJ94NbS_H`E<To_12
+R4
+S1
+R0
+w1637209345
+8C:/Users/viviv/Desktop/taller/proyecto/Counter2.sv
+FC:/Users/viviv/Desktop/taller/proyecto/Counter2.sv
+!i122 5
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/viviv/Desktop/taller/proyecto/Counter2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/viviv/Desktop/taller/proyecto|C:/Users/viviv/Desktop/taller/proyecto/Counter2.sv|
+!i113 1
+R7
+R8
+R9
+n@counter2
+vFSM
+R1
+R2
+!i10b 1
+!s100 ODaRl0?emIh6MEn?=<M?A0
+R3
+I?J]XK7GaGU>Q`DQ0S[B863
+R4
+S1
+R0
+w1637336654
+8C:/Users/viviv/Desktop/taller/proyecto/FSM.sv
+FC:/Users/viviv/Desktop/taller/proyecto/FSM.sv
+!i122 2
+L0 1 44
+R5
+r1
+!s85 0
+31
+Z10 !s108 1637364803.000000
+!s107 C:/Users/viviv/Desktop/taller/proyecto/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/viviv/Desktop/taller/proyecto|C:/Users/viviv/Desktop/taller/proyecto/FSM.sv|
+!i113 1
+R7
+R8
+R9
+n@f@s@m
+vFuerzaBruta
+R1
+R2
+!i10b 1
+!s100 A<zgdgNDnb]dO;VPCIWB;1
+R3
+I;TlGJ:]0m^ShM:BQbC]dZ0
+R4
+S1
+R0
+w1637364473
+8C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv
+FC:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv
+!i122 3
+L0 1 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/viviv/Desktop/taller/proyecto|C:/Users/viviv/Desktop/taller/proyecto/FuerzaBruta.sv|
+!i113 1
+R7
+R8
+R9
+n@fuerza@bruta
+vrom
+!s110 1637364802
+!i10b 1
+!s100 _1eTl3=`ID@34RYFOkMF93
+R3
+I7VSVaUc4XgEZ0lQI`7?PT3
+R4
+R0
+w1635989005
+8C:/Users/viviv/Desktop/taller/proyecto/rom.v
+FC:/Users/viviv/Desktop/taller/proyecto/rom.v
+!i122 0
+Z11 L0 40 61
+R5
+r1
+!s85 0
+31
+!s108 1637364802.000000
+!s107 C:/Users/viviv/Desktop/taller/proyecto/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/viviv/Desktop/taller/proyecto|C:/Users/viviv/Desktop/taller/proyecto/rom.v|
+!i113 1
+Z12 o-vlog01compat -work work
+Z13 !s92 -vlog01compat -work work +incdir+C:/Users/viviv/Desktop/taller/proyecto
+R9
+vtext_rom
+!s110 1637364803
+!i10b 1
+!s100 gMjWdl_R2VmRz_J4Qe`C<1
+R3
+ICJb`MRE<_7dW=6MQHX>RA1
+R4
+R0
+w1635994367
+8C:/Users/viviv/Desktop/taller/proyecto/text_rom.v
+FC:/Users/viviv/Desktop/taller/proyecto/text_rom.v
+!i122 1
+R11
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/viviv/Desktop/taller/proyecto/text_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/viviv/Desktop/taller/proyecto|C:/Users/viviv/Desktop/taller/proyecto/text_rom.v|
+!i113 1
+R12
+R13
+R9

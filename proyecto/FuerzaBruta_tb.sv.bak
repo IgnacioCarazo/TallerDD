@@ -1,0 +1,10 @@
+module FuerzaBruta_tb();
+
+	initial begin
+    forever begin
+		 clk = 0;
+		 #10 clk = ~clk;
+		end 
+	end
+
+endmodule 

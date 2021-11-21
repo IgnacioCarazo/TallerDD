@@ -1,0 +1,15 @@
+module FuerzaBruta(input patron, texto, 
+						 output instancias);
+						 
+
+
+
+logic i, j, start = 0;
+logic lenpatron = patron.len();
+logic lentexto = texto.len();
+						 
+						 
+						 
+						 
+ endmodule
+						 
