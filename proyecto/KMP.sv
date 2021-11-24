@@ -1,6 +1,6 @@
-module KMP(input logic inicio, sel, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
+module KMP(input logic inicio, sel, clk, rst, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
 
-logic clk, rst, fin, igual, finPatron, menor0;
+logic fin, igual, finPatron, menor0;
 logic set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto;
 logic [3:0] actual_state;		  
 						  

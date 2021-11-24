@@ -1,6 +1,6 @@
-module FuerzaBruta(input inicio, sel, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
+module FuerzaBruta(input inicio, sel, clk, rst, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
 
-logic clk, rst, fin, igual, pFin;
+logic fin, igual, pFin;
 logic set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma;
 logic [3:0] actual_state;						  
 						  
