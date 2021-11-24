@@ -1,6 +1,6 @@
-module FuerzaBruta();
+module FuerzaBruta(input inicio, sel, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
 
-logic clk, rst, fin, igual, pFin, inicio;
+logic clk, rst, fin, igual, pFin;
 logic set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma;
 logic [3:0] actual_state;						  
 						  
@@ -9,10 +9,11 @@ logic [7:0]  address_texto;
 logic [7:0]  start;
 logic [7:0]  patron;
 logic [7:0]  texto;
-logic [7:0]  instancias;
 
-FSM control(clk, rst, fin, igual, pFin, inicio, set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma, actual_state);
 
+FSM control(clk, rst, fin, igual, pFin, inicio, sel, set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma, actual_state);
+
+//suma sum(clk, rst, set_Iniciales, sw_bit_inicial, address_texto);
 
 Comparator finTexto(7'd55, address_texto, fin);
 
