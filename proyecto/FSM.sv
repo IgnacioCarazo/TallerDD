@@ -1,4 +1,4 @@
-module FSM(input clk, rst, fin, igual, pFin, inicio,
+module FSM(input clk, rst, fin, igual, pFin, inicio, sel,
 				output set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma,
 				output [3:0] actual_state);
 				
@@ -6,7 +6,7 @@ logic [3:0] state, next_state;
 
 //actual state
 always_ff @(posedge clk or posedge rst)
-	if(rst) state = 4'd0;
+	if(rst) state = 4'd7;
 	else
 		state = next_state;
 		
@@ -21,7 +21,7 @@ always_comb
 	4'd4: if(pFin) next_state = 4'd6; else next_state = 4'd5;
 	4'd5: next_state = 4'd1;
 	4'd6: next_state = 4'd1;
-	4'd7: if(inicio) next_state = 4'd0; else next_state = 4'd7;
+	4'd7: if(inicio && sel) next_state = 4'd0; else next_state = 4'd7;
 	4'd8: next_state = 4'd9;
 	4'd9: if(igual) next_state = 4'd10; else next_state = 4'd11;
 	4'd10: next_state = 4'd1;

@@ -1,4 +1,4 @@
-module FSMKMP(input clk, rst, finTexto, inicio, igual, finPatron, menor0,
+module FSMKMP(input clk, rst, finTexto, inicio, igual, finPatron, menor0, sel,
 				  output set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto,
   				  output [3:0] actual_state);
 				
@@ -6,7 +6,7 @@ logic [3:0] state, next_state;
 
 //actual state
 always_ff @(posedge clk or posedge rst)
-	if(rst) state = 4'd0;
+	if(rst) state = 4'd2;
 	else
 		state = next_state;
 		
@@ -16,7 +16,7 @@ always_comb
 	case(state)
 	4'd0: next_state = 4'd1;
 	4'd1: if(finTexto) next_state = 4'd2; else next_state = 4'd3;
-	4'd2: if(inicio) next_state = 4'd0; else next_state = 4'd2;
+	4'd2: if(inicio && sel) next_state = 4'd0; else next_state = 4'd2;
 	4'd3: if(igual) next_state = 4'd5; else next_state = 4'd7;
 	4'd4: next_state = 4'd1;
 	4'd5: if(finPatron) next_state = 4'd6; else next_state = 4'd4;
