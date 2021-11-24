@@ -934,8 +934,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : W16       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : W17       :        :                   :         : 4A        :                
 GND                          : W18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W19       :        :                   :         : 4A        :                
-led[2]                       : W20       : output : 2.5 V             :         : 5A        : Y              
-led[1]                       : W21       : output : 2.5 V             :         : 5A        : Y              
+led[1]                       : W20       : output : 2.5 V             :         : 5A        : Y              
+led[2]                       : W21       : output : 2.5 V             :         : 5A        : Y              
 display_time[3]              : W22       : output : 2.5 V             :         : 5A        : Y              
 VCCIO5A                      : W23       : power  :                   : 2.5V    : 5A        :                
 display_time[4]              : W24       : output : 2.5 V             :         : 5A        : Y              
@@ -963,9 +963,9 @@ GND                          : Y15       : gnd    :                   :         
 btn[0]                       : Y16       : input  : 2.5 V             :         : 3B        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y17       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y18       :        :                   :         : 4A        :                
-led[3]                       : Y19       : output : 2.5 V             :         : 4A        : Y              
+led[0]                       : Y19       : output : 2.5 V             :         : 4A        : Y              
 GND                          : Y20       : gnd    :                   :         :           :                
-led[0]                       : Y21       : output : 2.5 V             :         : 5A        : Y              
+led[3]                       : Y21       : output : 2.5 V             :         : 5A        : Y              
 VCCA_FPLL                    : Y22       : power  :                   : 2.5V    :           :                
 display_time[1]              : Y23       : output : 2.5 V             :         : 5A        : Y              
 display_time[2]              : Y24       : output : 2.5 V             :         : 5A        : Y              

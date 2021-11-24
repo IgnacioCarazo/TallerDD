@@ -6,8 +6,6 @@ module prueba(input logic clk, rst, // reset es el switch de mas a la izquierda
 				  output led_alcanza,
 				  output logic [6:0]display_alcanza
 				  );
-
-
 	
 	reg [3:0]btn_seleccionado;
 	reg [3:0]estado;

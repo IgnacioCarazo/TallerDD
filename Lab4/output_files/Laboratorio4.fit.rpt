@@ -1,5 +1,5 @@
 Fitter report for Laboratorio4
-Wed Oct 13 21:43:58 2021
+Thu Oct 14 07:29:40 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Oct 13 21:43:58 2021       ;
+; Fitter Status                   ; Successful - Thu Oct 14 07:29:40 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
 ; Top-level Entity Name           ; prueba                                      ;
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 62 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 69                                          ;
+; Total registers                 ; 66                                          ;
 ; Total pins                      ; 45 / 457 ( 10 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -167,15 +167,12 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------------------+------------------+-----------------------+
 ; clk~inputCLKENA0            ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                       ;                  ;                       ;
 ; clock_mod:clk_mod|count[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[0]~DUPLICATE  ;                  ;                       ;
-; clock_mod:clk_mod|count[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[1]~DUPLICATE  ;                  ;                       ;
-; clock_mod:clk_mod|count[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[2]~DUPLICATE  ;                  ;                       ;
-; clock_mod:clk_mod|count[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[5]~DUPLICATE  ;                  ;                       ;
+; clock_mod:clk_mod|count[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[3]~DUPLICATE  ;                  ;                       ;
+; clock_mod:clk_mod|count[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[6]~DUPLICATE  ;                  ;                       ;
 ; clock_mod:clk_mod|count[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[8]~DUPLICATE  ;                  ;                       ;
-; clock_mod:clk_mod|count[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[10]~DUPLICATE ;                  ;                       ;
-; clock_mod:clk_mod|count[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[11]~DUPLICATE ;                  ;                       ;
-; clock_mod:clk_mod|count[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[13]~DUPLICATE ;                  ;                       ;
+; clock_mod:clk_mod|count[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[12]~DUPLICATE ;                  ;                       ;
 ; clock_mod:clk_mod|count[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[14]~DUPLICATE ;                  ;                       ;
-; clock_mod:clk_mod|count[20] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[20]~DUPLICATE ;                  ;                       ;
+; clock_mod:clk_mod|count[17] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[17]~DUPLICATE ;                  ;                       ;
 ; clock_mod:clk_mod|count[25] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; clock_mod:clk_mod|count[25]~DUPLICATE ;                  ;                       ;
 +-----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------------------+------------------+-----------------------+
 
@@ -228,12 +225,12 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 62 / 32,070        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 62                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 63 / 32,070        ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 66 / 32,070        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 25                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 34                 ;       ;
-;         [c] ALMs used for registers                         ; 4                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 36                 ;       ;
+;         [c] ALMs used for registers                         ; 5                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 4 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -242,8 +239,8 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 10 / 3,207         ; < 1 % ;
-;     -- Logic LABs                                           ; 10                 ;       ;
+; Total LABs:  partially or completely used                   ; 13 / 3,207         ; < 1 % ;
+;     -- Logic LABs                                           ; 13                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 97                 ;       ;
@@ -252,15 +249,15 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ;     -- 5 input functions                                    ; 3                  ;       ;
 ;     -- 4 input functions                                    ; 25                 ;       ;
 ;     -- <=3 input functions                                  ; 42                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 3                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 69                 ;       ;
+; Dedicated logic registers                                   ; 66                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 58 / 64,140        ; < 1 % ;
-;         -- Secondary logic registers                        ; 11 / 64,140        ; < 1 % ;
+;         -- Secondary logic registers                        ; 8 / 64,140         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 58                 ;       ;
-;         -- Routing optimization registers                   ; 11                 ;       ;
+;         -- Routing optimization registers                   ; 8                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 45 / 457           ; 10 %  ;
@@ -316,11 +313,11 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 1.6% / 1.7% / 1.4% ;       ;
-; Maximum fan-out                                             ; 43                 ;       ;
-; Highest non-global fan-out                                  ; 42                 ;       ;
-; Total fan-out                                               ; 635                ;       ;
-; Average fan-out                                             ; 2.46               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 1.3% / 1.4% / 1.1% ;       ;
+; Maximum fan-out                                             ; 40                 ;       ;
+; Highest non-global fan-out                                  ; 39                 ;       ;
+; Total fan-out                                               ; 628                ;       ;
+; Average fan-out                                             ; 2.44               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -331,12 +328,12 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 62 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 62                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 63 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 66 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 25                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 34                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 4                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 36                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 5                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 4 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -345,8 +342,8 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 10 / 3207 ( < 1 % )  ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 10                   ; 0                              ;
+; Total LABs:  partially or completely used                   ; 13 / 3207 ( < 1 % )  ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 13                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Combinational ALUT usage for logic                          ; 97                   ; 0                              ;
@@ -355,7 +352,7 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ;     -- 5 input functions                                    ; 3                    ; 0                              ;
 ;     -- 4 input functions                                    ; 25                   ; 0                              ;
 ;     -- <=3 input functions                                  ; 42                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 1                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 3                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -363,10 +360,10 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 58 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 11 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 8 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 58                   ; 0                              ;
-;         -- Routing optimization registers                   ; 11                   ; 0                              ;
+;         -- Routing optimization registers                   ; 8                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -383,7 +380,7 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 635                  ; 0                              ;
+;     -- Total Connections                                    ; 628                  ; 0                              ;
 ;     -- Registered Connections                               ; 236                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -420,7 +417,7 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ; btn[1]    ; W15   ; 3B       ; 40           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; btn[2]    ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; btn[3]    ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; clk       ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 44                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clk       ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 41                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; moneda100 ; AC9   ; 3A       ; 4            ; 0            ; 0            ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; moneda500 ; AD10  ; 3A       ; 4            ; 0            ; 17           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; rst       ; AE12  ; 3A       ; 2            ; 0            ; 57           ; 25                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
@@ -464,10 +461,10 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ; display_time[4]    ; W24   ; 5A       ; 89           ; 15           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; display_time[5]    ; V23   ; 5A       ; 89           ; 15           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; display_time[6]    ; W25   ; 5B       ; 89           ; 20           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; led[0]             ; Y21   ; 5A       ; 89           ; 6            ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; led[1]             ; W21   ; 5A       ; 89           ; 8            ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; led[2]             ; W20   ; 5A       ; 89           ; 6            ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; led[3]             ; Y19   ; 4A       ; 84           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; led[0]             ; Y19   ; 4A       ; 84           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; led[1]             ; W20   ; 5A       ; 89           ; 6            ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; led[2]             ; W21   ; 5A       ; 89           ; 8            ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; led[3]             ; Y21   ; 5A       ; 89           ; 6            ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; led_alcanza        ; V16   ; 4A       ; 52           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 +--------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
@@ -1354,8 +1351,8 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ; W17      ; 152        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; W18      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W19      ; 192        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; W20      ; 217        ; 5A             ; led[2]                          ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
-; W21      ; 221        ; 5A             ; led[1]                          ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; W20      ; 217        ; 5A             ; led[1]                          ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; W21      ; 221        ; 5A             ; led[2]                          ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; W22      ; 223        ; 5A             ; display_time[3]                 ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; W23      ;            ; 5A             ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W24      ; 238        ; 5A             ; display_time[4]                 ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
@@ -1383,9 +1380,9 @@ The pin-out file can be found in C:/Users/50689/Desktop/Allan/TallerDD-master/Ta
 ; Y16      ; 128        ; 3B             ; btn[0]                          ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y17      ; 170        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y18      ; 178        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y19      ; 202        ; 4A             ; led[3]                          ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y19      ; 202        ; 4A             ; led[0]                          ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y20      ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y21      ; 219        ; 5A             ; led[0]                          ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; Y21      ; 219        ; 5A             ; led[3]                          ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; Y22      ;            ; --             ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y23      ; 232        ; 5A             ; display_time[1]                 ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; Y24      ; 234        ; 5A             ; display_time[2]                 ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
@@ -1457,16 +1454,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                         ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name             ; Library Name ;
 +----------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
-; |prueba                                            ; 62.0 (0.5)           ; 63.0 (0.5)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 97 (1)              ; 69 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 45   ; 0            ; |prueba                                               ; prueba                  ; work         ;
-;    |Comparator:comparador_plata|                   ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Comparator:comparador_plata                   ; Comparator              ; work         ;
-;    |Comparator:comparador_tiempos|                 ; 0.0 (0.0)            ; 0.3 (0.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Comparator:comparador_tiempos                 ; Comparator              ; work         ;
+; |prueba                                            ; 62.0 (0.5)           ; 64.5 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 97 (1)              ; 66 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 45   ; 0            ; |prueba                                               ; prueba                  ; work         ;
+;    |Comparator:comparador_plata|                   ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Comparator:comparador_plata                   ; Comparator              ; work         ;
+;    |Comparator:comparador_tiempos|                 ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Comparator:comparador_tiempos                 ; Comparator              ; work         ;
 ;    |Counter:contador|                              ; 0.7 (0.7)            ; 0.7 (0.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Counter:contador                              ; Counter                 ; work         ;
-;    |FSM:maquina_estados|                           ; 10.7 (10.7)          ; 11.2 (11.2)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|FSM:maquina_estados                           ; FSM                     ; work         ;
-;    |Register:btn_reg|                              ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Register:btn_reg                              ; Register                ; work         ;
-;    |Sumador:sumador_monedas|                       ; 7.8 (7.8)            ; 7.8 (7.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 11 (11)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Sumador:sumador_monedas                       ; Sumador                 ; work         ;
-;    |clock_mod:clk_mod|                             ; 23.5 (23.5)          ; 24.0 (24.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (41)             ; 44 (44)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|clock_mod:clk_mod                             ; clock_mod               ; work         ;
-;    |drink_cost_module:bebida|                      ; 3.2 (3.2)            ; 3.2 (3.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|drink_cost_module:bebida                      ; drink_cost_module       ; work         ;
-;    |ing_serving_time_module:modulo_tiempo_servido| ; 10.7 (10.7)          ; 11.2 (11.2)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (13)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|ing_serving_time_module:modulo_tiempo_servido ; ing_serving_time_module ; work         ;
+;    |FSM:maquina_estados|                           ; 10.7 (10.7)          ; 10.7 (10.7)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|FSM:maquina_estados                           ; FSM                     ; work         ;
+;    |Register:btn_reg|                              ; 3.2 (3.2)            ; 3.2 (3.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Register:btn_reg                              ; Register                ; work         ;
+;    |Sumador:sumador_monedas|                       ; 8.0 (8.0)            ; 8.8 (8.8)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 11 (11)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|Sumador:sumador_monedas                       ; Sumador                 ; work         ;
+;    |clock_mod:clk_mod|                             ; 23.5 (23.5)          ; 24.0 (24.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (41)             ; 41 (41)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|clock_mod:clk_mod                             ; clock_mod               ; work         ;
+;    |drink_cost_module:bebida|                      ; 3.0 (3.0)            ; 3.3 (3.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|drink_cost_module:bebida                      ; drink_cost_module       ; work         ;
+;    |ing_serving_time_module:modulo_tiempo_servido| ; 10.5 (10.5)          ; 11.2 (11.2)                      ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (13)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|ing_serving_time_module:modulo_tiempo_servido ; ing_serving_time_module ; work         ;
 ;    |sel_boton:btn_or|                              ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |prueba|sel_boton:btn_or                              ; sel_boton               ; work         ;
 +----------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -1514,9 +1511,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; display_alcanza[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; display_alcanza[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; display_alcanza[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; btn[2]             ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; btn[2]             ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; rst                ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; btn[1]             ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; btn[1]             ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; btn[0]             ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; btn[3]             ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; moneda100          ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1535,9 +1532,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; state[2]                                            ;                   ;         ;
 ; state[3]                                            ;                   ;         ;
 ; btn[2]                                              ;                   ;         ;
-;      - sel_boton:btn_or|btn_sel~0                   ; 1                 ; 0       ;
-;      - FSM:maquina_estados|state~18                 ; 1                 ; 0       ;
-;      - Register:btn_reg|q[2]~0                      ; 1                 ; 0       ;
+;      - sel_boton:btn_or|btn_sel~0                   ; 0                 ; 0       ;
+;      - FSM:maquina_estados|state~18                 ; 0                 ; 0       ;
+;      - Register:btn_reg|q[2]~0                      ; 0                 ; 0       ;
 ; rst                                                 ;                   ;         ;
 ;      - Sumador:sumador_monedas|result[0]            ; 0                 ; 0       ;
 ;      - Sumador:sumador_monedas|result[1]            ; 0                 ; 0       ;
@@ -1565,9 +1562,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - FSM:maquina_estados|state~20                 ; 0                 ; 0       ;
 ;      - FSM:maquina_estados|state~21                 ; 0                 ; 0       ;
 ; btn[1]                                              ;                   ;         ;
-;      - sel_boton:btn_or|btn_sel~0                   ; 0                 ; 0       ;
-;      - FSM:maquina_estados|state~18                 ; 0                 ; 0       ;
-;      - Register:btn_reg|q[1]~1                      ; 0                 ; 0       ;
+;      - sel_boton:btn_or|btn_sel~0                   ; 1                 ; 0       ;
+;      - FSM:maquina_estados|state~18                 ; 1                 ; 0       ;
+;      - Register:btn_reg|q[1]~1                      ; 1                 ; 0       ;
 ; btn[0]                                              ;                   ;         ;
 ;      - sel_boton:btn_or|btn_sel~0                   ; 0                 ; 0       ;
 ;      - FSM:maquina_estados|state~18                 ; 0                 ; 0       ;
@@ -1596,14 +1593,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+---------------------+---------+-----------------------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                      ; Location            ; Fan-Out ; Usage                                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------------+---------------------+---------+-----------------------------------------+--------+----------------------+------------------+---------------------------+
-; Comparator:comparador_tiempos|LessThan0~0 ; LABCELL_X83_Y8_N54  ; 1       ; Async. clear                            ; no     ; --                   ; --               ; --                        ;
-; FSM:maquina_estados|state~15              ; MLABCELL_X84_Y8_N30 ; 3       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; Comparator:comparador_tiempos|LessThan0~0 ; LABCELL_X81_Y7_N0   ; 1       ; Async. clear                            ; no     ; --                   ; --               ; --                        ;
+; FSM:maquina_estados|state~15              ; LABCELL_X80_Y7_N24  ; 3       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
 ; clk                                       ; PIN_AF14            ; 2       ; Clock                                   ; no     ; --                   ; --               ; --                        ;
-; clk                                       ; PIN_AF14            ; 43      ; Clock                                   ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; clock_mod:clk_mod|Equal0~6                ; LABCELL_X88_Y1_N54  ; 42      ; Sync. clear                             ; no     ; --                   ; --               ; --                        ;
-; clock_mod:clk_mod|seconds                 ; FF_X85_Y5_N44       ; 26      ; Clock                                   ; no     ; --                   ; --               ; --                        ;
+; clk                                       ; PIN_AF14            ; 40      ; Clock                                   ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; clock_mod:clk_mod|Equal0~6                ; LABCELL_X74_Y5_N54  ; 39      ; Sync. clear                             ; no     ; --                   ; --               ; --                        ;
+; clock_mod:clk_mod|seconds                 ; FF_X75_Y5_N23       ; 26      ; Clock                                   ; no     ; --                   ; --               ; --                        ;
 ; rst                                       ; PIN_AE12            ; 25      ; Async. clear, Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; sel_boton:btn_or|btn_sel~0                ; MLABCELL_X84_Y8_N6  ; 5       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
+; sel_boton:btn_or|btn_sel~0                ; MLABCELL_X78_Y7_N51 ; 5       ; Clock enable                            ; no     ; --                   ; --               ; --                        ;
 +-------------------------------------------+---------------------+---------+-----------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1612,7 +1609,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_AF14 ; 43      ; Global Clock         ; GCLK6            ; --                        ;
+; clk  ; PIN_AF14 ; 40      ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1621,14 +1618,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 193 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 13 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 42 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 62 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 195 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 18 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 47 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 45 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 52 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 45 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1684,12 +1681,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 55 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 44 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 50 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 54 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 77 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 86 / 266,960 ( < 1 % )  ;
+; R14 interconnects                           ; 41 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 50 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 90 / 130,992 ( < 1 % )  ;
+; R6 interconnects                            ; 102 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1850,80 +1847,79 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+-------------------------------+-------------------+
 ; Source Clock(s)               ; Destination Clock(s)          ; Delay Added in ns ;
 +-------------------------------+-------------------------------+-------------------+
-; clock_mod:clk_mod|seconds     ; clock_mod:clk_mod|seconds     ; 16.7              ;
-; clock_mod:clk_mod|seconds,I/O ; clock_mod:clk_mod|seconds     ; 9.9               ;
-; clk                           ; clk                           ; 9.8               ;
-; clock_mod:clk_mod|seconds     ; clock_mod:clk_mod|seconds,I/O ; 1.5               ;
+; clock_mod:clk_mod|seconds     ; clock_mod:clk_mod|seconds     ; 13.0              ;
+; clk                           ; clk                           ; 8.4               ;
+; clock_mod:clk_mod|seconds,I/O ; clock_mod:clk_mod|seconds     ; 7.8               ;
+; clock_mod:clk_mod|seconds     ; clock_mod:clk_mod|seconds,I/O ; 2.1               ;
 +-------------------------------+-------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                   ;
-+----------------------------------------------+----------------------------------------------+-------------------+
-; Source Register                              ; Destination Register                         ; Delay Added in ns ;
-+----------------------------------------------+----------------------------------------------+-------------------+
-; clock_mod:clk_mod|seconds                    ; clock_mod:clk_mod|seconds                    ; 6.896             ;
-; clock_mod:clk_mod|count[28]                  ; clock_mod:clk_mod|seconds                    ; 2.599             ;
-; clock_mod:clk_mod|count[30]                  ; clock_mod:clk_mod|seconds                    ; 2.596             ;
-; clock_mod:clk_mod|count[26]                  ; clock_mod:clk_mod|seconds                    ; 2.587             ;
-; clock_mod:clk_mod|count[29]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[27]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[31]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[24]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[23]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[22]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[21]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[20]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[25]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[18]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[17]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[16]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[15]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[14]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[13]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[12]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[11]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[10]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[9]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[8]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[7]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[6]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[5]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[4]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[3]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[2]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[1]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[0]                   ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; clock_mod:clk_mod|count[19]                  ; clock_mod:clk_mod|seconds                    ; 2.569             ;
-; Sumador:sumador_monedas|result[0]            ; Sumador:sumador_monedas|display[6]           ; 0.993             ;
-; Sumador:sumador_monedas|result[1]            ; Sumador:sumador_monedas|display[6]           ; 0.989             ;
-; Sumador:sumador_monedas|result[3]            ; Sumador:sumador_monedas|display[6]           ; 0.967             ;
-; FSM:maquina_estados|state.s_servir_azucar    ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.961             ;
-; FSM:maquina_estados|state.s_revisar_monto    ; FSM:maquina_estados|state.s_devolver_dinero  ; 0.929             ;
-; FSM:maquina_estados|state.s_servir_leche     ; FSM:maquina_estados|state.s_servir_chocolate ; 0.873             ;
-; FSM:maquina_estados|state.s_esperar_boton    ; FSM:maquina_estados|state.s_revisar_monto    ; 0.784             ;
-; Sumador:sumador_monedas|result[2]            ; FSM:maquina_estados|state.s_devolver_dinero  ; 0.739             ;
-; Register:btn_reg|q[3]                        ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.665             ;
-; Register:btn_reg|q[0]                        ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.663             ;
-; FSM:maquina_estados|state.s_servir_chocolate ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.649             ;
-; Register:btn_reg|q[2]                        ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.628             ;
-; Register:btn_reg|q[1]                        ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.606             ;
-; FSM:maquina_estados|state.s_devolver_dinero  ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.562             ;
-; FSM:maquina_estados|state.s_servir_agua      ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.544             ;
-; FSM:maquina_estados|state.s_devolver_cambio  ; FSM:maquina_estados|state.s_esperar_boton    ; 0.512             ;
-; FSM:maquina_estados|state.s_servir_cafe      ; FSM:maquina_estados|state.s_devolver_cambio  ; 0.446             ;
-; moneda100                                    ; Sumador:sumador_monedas|display[6]           ; 0.417             ;
-; moneda500                                    ; Sumador:sumador_monedas|display[6]           ; 0.417             ;
-; rst                                          ; FSM:maquina_estados|state.s_servir_cafe      ; 0.221             ;
-; Counter:contador|Q[0]                        ; Counter:contador|Q[0]                        ; 0.158             ;
-; btn[2]                                       ; FSM:maquina_estados|state.s_esperar_boton    ; 0.158             ;
-; btn[1]                                       ; FSM:maquina_estados|state.s_esperar_boton    ; 0.158             ;
-; btn[0]                                       ; FSM:maquina_estados|state.s_esperar_boton    ; 0.158             ;
-; btn[3]                                       ; FSM:maquina_estados|state.s_esperar_boton    ; 0.158             ;
-+----------------------------------------------+----------------------------------------------+-------------------+
-Note: This table only shows the top 58 path(s) that have the largest delay added for hold.
++----------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                  ;
++----------------------------------------------+---------------------------------------------+-------------------+
+; Source Register                              ; Destination Register                        ; Delay Added in ns ;
++----------------------------------------------+---------------------------------------------+-------------------+
+; clock_mod:clk_mod|seconds                    ; clock_mod:clk_mod|seconds                   ; 6.438             ;
+; clock_mod:clk_mod|count[30]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[29]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[28]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[27]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[26]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[31]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[24]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[23]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[22]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[21]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[20]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[25]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[18]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[17]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[16]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[15]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[14]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[13]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[12]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[11]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[10]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[9]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[8]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[7]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[6]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[5]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[4]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[3]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[2]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[1]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[0]                   ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; clock_mod:clk_mod|count[19]                  ; clock_mod:clk_mod|seconds                   ; 2.815             ;
+; FSM:maquina_estados|state.s_revisar_monto    ; FSM:maquina_estados|state.s_devolver_dinero ; 0.907             ;
+; Sumador:sumador_monedas|result[0]            ; Sumador:sumador_monedas|display[1]          ; 0.892             ;
+; Sumador:sumador_monedas|result[1]            ; Sumador:sumador_monedas|display[1]          ; 0.883             ;
+; Sumador:sumador_monedas|result[3]            ; Sumador:sumador_monedas|display[1]          ; 0.868             ;
+; FSM:maquina_estados|state.s_servir_leche     ; FSM:maquina_estados|state.s_devolver_cambio ; 0.751             ;
+; FSM:maquina_estados|state.s_servir_azucar    ; FSM:maquina_estados|state.s_devolver_cambio ; 0.631             ;
+; Register:btn_reg|q[3]                        ; Counter:contador|Q[0]                       ; 0.622             ;
+; FSM:maquina_estados|state.s_servir_cafe      ; FSM:maquina_estados|state.s_devolver_cambio ; 0.621             ;
+; Register:btn_reg|q[0]                        ; Counter:contador|Q[0]                       ; 0.620             ;
+; Register:btn_reg|q[2]                        ; Counter:contador|Q[0]                       ; 0.612             ;
+; FSM:maquina_estados|state.s_servir_chocolate ; FSM:maquina_estados|state.s_devolver_cambio ; 0.600             ;
+; FSM:maquina_estados|state.s_servir_agua      ; FSM:maquina_estados|state.s_servir_cafe     ; 0.599             ;
+; Register:btn_reg|q[1]                        ; Counter:contador|Q[0]                       ; 0.570             ;
+; Sumador:sumador_monedas|result[2]            ; Sumador:sumador_monedas|display[1]          ; 0.545             ;
+; FSM:maquina_estados|state.s_devolver_dinero  ; Counter:contador|Q[0]                       ; 0.542             ;
+; moneda100                                    ; Sumador:sumador_monedas|display[1]          ; 0.379             ;
+; moneda500                                    ; Sumador:sumador_monedas|display[1]          ; 0.379             ;
+; rst                                          ; FSM:maquina_estados|state.s_servir_cafe     ; 0.299             ;
+; Counter:contador|Q[0]                        ; Counter:contador|Q[0]                       ; 0.202             ;
+; FSM:maquina_estados|state.s_esperar_boton    ; FSM:maquina_estados|state.s_revisar_monto   ; 0.130             ;
+; btn[2]                                       ; FSM:maquina_estados|state.s_revisar_monto   ; 0.064             ;
+; btn[1]                                       ; FSM:maquina_estados|state.s_revisar_monto   ; 0.064             ;
+; btn[0]                                       ; FSM:maquina_estados|state.s_revisar_monto   ; 0.064             ;
+; btn[3]                                       ; FSM:maquina_estados|state.s_revisar_monto   ; 0.064             ;
++----------------------------------------------+---------------------------------------------+-------------------+
+Note: This table only shows the top 57 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1949,31 +1945,31 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:30
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:28
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:07
-Info (11888): Total time spent on timing analysis during the Fitter is 1.00 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
+Info (11888): Total time spent on timing analysis during the Fitter is 1.23 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:08
 Info (144001): Generated suppressed messages file C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/output_files/Laboratorio4.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 6163 megabytes
-    Info: Processing ended: Wed Oct 13 21:44:00 2021
-    Info: Elapsed time: 00:01:46
-    Info: Total CPU time (on all processors): 00:02:09
+    Info: Peak virtual memory: 6153 megabytes
+    Info: Processing ended: Thu Oct 14 07:29:42 2021
+    Info: Elapsed time: 00:01:51
+    Info: Total CPU time (on all processors): 00:02:06
 
 
 +----------------------------+
