@@ -1,5 +1,5 @@
 Fitter report for Laboratorio4
-Thu Oct 14 07:29:40 2021
+Wed Nov 24 12:09:31 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Oct 14 07:29:40 2021       ;
+; Fitter Status                   ; Successful - Wed Nov 24 12:09:31 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
 ; Top-level Entity Name           ; prueba                                      ;
@@ -1945,31 +1945,31 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:28
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:35
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 1.23 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:08
+Info (11888): Total time spent on timing analysis during the Fitter is 1.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:08
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/output_files/Laboratorio4.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 6153 megabytes
-    Info: Processing ended: Thu Oct 14 07:29:42 2021
-    Info: Elapsed time: 00:01:51
-    Info: Total CPU time (on all processors): 00:02:06
+    Info: Peak virtual memory: 6213 megabytes
+    Info: Processing ended: Wed Nov 24 12:09:33 2021
+    Info: Elapsed time: 00:01:53
+    Info: Total CPU time (on all processors): 00:02:15
 
 
 +----------------------------+

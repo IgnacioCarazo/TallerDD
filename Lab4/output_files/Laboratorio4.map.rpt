@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio4
-Thu Oct 14 07:27:49 2021
+Wed Nov 24 12:07:38 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -59,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 14 07:27:49 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 24 12:07:37 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio4                                ;
 ; Top-level Entity Name           ; prueba                                      ;
@@ -494,7 +494,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 14 07:27:12 2021
+    Info: Processing started: Wed Nov 24 12:06:57 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio4 -c Laboratorio4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -529,6 +529,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
 Info (12021): Found 1 design units, including 1 entities, in source file clock_mod.sv
     Info (12023): Found entity 1: clock_mod File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/clock_mod.sv Line: 1
 Info (12127): Elaborating entity "prueba" for the top level hierarchy
+Warning (10199): Verilog HDL Case Statement warning at prueba.sv(50): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 50
 Warning (10199): Verilog HDL Case Statement warning at prueba.sv(52): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 52
 Warning (10199): Verilog HDL Case Statement warning at prueba.sv(54): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 54
 Warning (10199): Verilog HDL Case Statement warning at prueba.sv(56): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 56
@@ -542,16 +543,15 @@ Warning (10199): Verilog HDL Case Statement warning at prueba.sv(70): case item 
 Warning (10199): Verilog HDL Case Statement warning at prueba.sv(72): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 72
 Warning (10199): Verilog HDL Case Statement warning at prueba.sv(74): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 74
 Warning (10199): Verilog HDL Case Statement warning at prueba.sv(76): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 76
-Warning (10199): Verilog HDL Case Statement warning at prueba.sv(78): case item expression never matches the case expression File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 78
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:maquina_estados" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 21
-Info (12128): Elaborating entity "clock_mod" for hierarchy "clock_mod:clk_mod" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 23
-Info (12128): Elaborating entity "sel_boton" for hierarchy "sel_boton:btn_or" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 25
-Info (12128): Elaborating entity "Sumador" for hierarchy "Sumador:sumador_monedas" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 27
-Info (12128): Elaborating entity "Register" for hierarchy "Register:btn_reg" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 29
-Info (12128): Elaborating entity "drink_cost_module" for hierarchy "drink_cost_module:bebida" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 31
-Info (12128): Elaborating entity "ing_serving_time_module" for hierarchy "ing_serving_time_module:modulo_tiempo_servido" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 33
-Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:comparador_plata" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 35
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:contador" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 39
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:maquina_estados" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 19
+Info (12128): Elaborating entity "clock_mod" for hierarchy "clock_mod:clk_mod" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 21
+Info (12128): Elaborating entity "sel_boton" for hierarchy "sel_boton:btn_or" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 23
+Info (12128): Elaborating entity "Sumador" for hierarchy "Sumador:sumador_monedas" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 25
+Info (12128): Elaborating entity "Register" for hierarchy "Register:btn_reg" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 27
+Info (12128): Elaborating entity "drink_cost_module" for hierarchy "drink_cost_module:bebida" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 29
+Info (12128): Elaborating entity "ing_serving_time_module" for hierarchy "ing_serving_time_module:modulo_tiempo_servido" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 31
+Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:comparador_plata" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 33
+Info (12128): Elaborating entity "Counter" for hierarchy "Counter:contador" File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 37
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display_cost[2]" is stuck at GND File: C:/Users/50689/Desktop/Allan/TallerDD-master/TallerDD/Lab4/prueba.sv Line: 4
@@ -574,10 +574,10 @@ Info (21057): Implemented 145 device resources after synthesis - the final resou
     Info (21059): Implemented 33 output pins
     Info (21061): Implemented 100 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Thu Oct 14 07:27:49 2021
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:55
+    Info: Peak virtual memory: 4804 megabytes
+    Info: Processing ended: Wed Nov 24 12:07:38 2021
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:00:48
 
 
 +------------------------------------------+
