@@ -9,7 +9,7 @@ logic [13:0]  address_texto;
 
 
 
-FSMKMP fsm(clk, rst, fin, inicio, igual, finPatron, menor0, sel, set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto, actual_state);
+FSMKMP fsm(clk, rst, fin, inicio, igual, finPatron, menor0, set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto, actual_state);
 
 
 Comparator #(14)  finTexto(14'd11064, address_texto, fin);
@@ -27,6 +27,5 @@ Counter2 contador_patron(clk, rst | set_Iniciales | rstPatron | posPorT, sumaTex
 
 //text_rom mem_text(address_texto, clk, texto);
 example exampleText(address_texto, clk, texto);
-Counter2 #(14) contador_text(clk, rst, patron_si | patron_fin | patron_texto_suma | text_suma, address_texto);
-
+Counter2 #(14) contador_text(clk, rst | set_Iniciales, sumaTextoPatron | sumaTexto, address_texto);
 endmodule 
