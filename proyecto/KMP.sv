@@ -1,13 +1,12 @@
-module KMP(input logic inicio, sel, clk, rst, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
+module KMP(input logic inicio, sel, clk, rst, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias, patron, texto, output logic [3:0] actual_state);
 
 logic fin, igual, finPatron, menor0;
 logic set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto;
-logic [3:0] actual_state;		  
+	  
 						  
 logic [2:0]  address_patron;
 logic [13:0]  address_texto;
-logic [7:0]  patron;
-logic [7:0]  texto;
+
 
 
 FSMKMP fsm(clk, rst, fin, inicio, igual, finPatron, menor0, sel, set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto, actual_state);

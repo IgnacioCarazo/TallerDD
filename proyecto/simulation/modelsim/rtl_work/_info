@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/simulation/modelsim
 vComparator
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1637771203
+Z2 !s110 1637800003
 !i10b 1
 !s100 7=Ub`=?GjKTL`lNfizMbR1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 Z5 w1637680650
 8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Comparator.sv
 FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Comparator.sv
-!i122 2
+!i122 4
 L0 1 6
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1637771203.000000
+Z7 !s108 1637800003.000000
 !s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Comparator.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Comparator.sv|
 !i113 1
@@ -49,7 +49,7 @@ R0
 R5
 8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Counter2.sv
 FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Counter2.sv
-!i122 3
+!i122 5
 L0 1 10
 R6
 r1
@@ -63,35 +63,86 @@ R8
 R9
 R10
 n@counter2
-vFSMKMP
-R1
-Z11 !s110 1637771204
+vexample
+Z11 !s110 1637800002
 !i10b 1
-!s100 KT@2C5Z9E;IfF>nOAkUXK0
+!s100 9@nBW]]ZAO3g]LPgIdTRL0
 R3
-I?U;4n>6z<OO3j>:cGl?Uf3
+Iz`]9bdj6^>iBeL3^agV:[2
 R4
-S1
 R0
-w1637722169
-8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSMKMP.sv
-FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSMKMP.sv
-!i122 4
-L0 1 41
+w1637770459
+8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v
+FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v
+!i122 1
+Z12 L0 40 61
 R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSMKMP.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSMKMP.sv|
+Z13 !s108 1637800002.000000
+!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v|
+!i113 1
+Z14 o-vlog01compat -work work
+Z15 !s92 -vlog01compat -work work {+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto}
+R10
+vFSM
+R1
+R11
+!i10b 1
+!s100 `M>gH0QPRWc`G^=85`UnS2
+R3
+I?Vf_2]5igUPc4J`mXzBSa0
+R4
+S1
+R0
+w1637722403
+8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSM.sv
+FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSM.sv
+!i122 2
+L0 1 44
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSM.sv|
 !i113 1
 R8
 R9
 R10
-n@f@s@m@k@m@p
+n@f@s@m
+vFuerzaBruta
+R1
+R2
+!i10b 1
+!s100 1_FIQSfiOkJco>MCK2AIZ0
+R3
+I5o?Zcdc318jRbPO4BaTgi1
+R4
+S1
+R0
+w1637799940
+8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv
+FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv
+!i122 3
+L0 1 32
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv|
+!i113 1
+R8
+R9
+R10
+n@fuerza@bruta
 vrom
-!s110 1637771202
+!s110 1637800001
 !i10b 1
 !s100 _1eTl3=`ID@34RYFOkMF93
 R3
@@ -102,62 +153,38 @@ R5
 8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v
 FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v
 !i122 0
-Z12 L0 40 61
-R6
-r1
-!s85 0
-31
-!s108 1637771201.000000
-!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v|
-!i113 1
-Z13 o-vlog01compat -work work
-Z14 !s92 -vlog01compat -work work {+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto}
-R10
-vtext_rom
-R2
-!i10b 1
-!s100 gMjWdl_R2VmRz_J4Qe`C<1
-R3
-IeKecXlek>=HFdG0jBKMN_3
-R4
-R0
-R5
-8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/text_rom.v
-FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/text_rom.v
-!i122 1
 R12
 R6
 r1
 !s85 0
 31
-!s108 1637771202.000000
-!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/text_rom.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/text_rom.v|
+!s108 1637800001.000000
+!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v|
 !i113 1
-R13
 R14
+R15
 R10
 vTopModule
 R1
-R11
+R2
 !i10b 1
-!s100 W7J2LYXZJ2HOkJm<Y?AKI2
+!s100 6c?Wh>[fcQW`>2K;n:m:A1
 R3
-IKbB2M8oh3_`jV>HzaW0Fj1
+ISD]e1gIF1^0`k;KccXd>A3
 R4
 S1
 R0
-w1637770460
+w1637799848
 8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv
 FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv
-!i122 5
-L0 1 97
+!i122 6
+L0 1 13
 R6
 r1
 !s85 0
 31
-!s108 1637771204.000000
+R7
 !s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv|
 !i113 1
@@ -165,3 +192,30 @@ R8
 R9
 R10
 n@top@module
+vTopModule_tb
+R1
+R2
+!i10b 1
+!s100 5S`odoL;cGVc@O;QL96Qo3
+R3
+Io48`TgAfcS^0kJ_3X1?gi0
+R4
+S1
+R0
+w1637799948
+8C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv
+FC:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv
+!i122 7
+L0 2 38
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto|C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv|
+!i113 1
+R8
+R9
+R10
+n@top@module_tb

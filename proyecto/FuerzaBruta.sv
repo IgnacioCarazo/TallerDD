@@ -1,14 +1,13 @@
-module FuerzaBruta(input inicio, sel, clk, rst, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias);
+module FuerzaBruta(input inicio, sel, clk, rst, input logic [7:0]sw_bit_inicial, output logic [7:0] instancias, patron, texto, output logic [3:0] actual_state);
 
 logic fin, igual, pFin;
 logic set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma;
-logic [3:0] actual_state;						  
+						  
 						  
 logic [2:0]  address_patron;
 logic [13:0]  address_texto;
 logic [7:0]  start;
-logic [7:0]  patron;
-logic [7:0]  texto;
+
 
 
 FSM control(clk, rst, fin, igual, pFin, inicio, sel, set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma, actual_state);
