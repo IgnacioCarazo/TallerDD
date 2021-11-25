@@ -1,5 +1,5 @@
 module FSM(input clk, rst, fin, igual, pFin, inicio, sel,
-				output set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma,
+				output set_Iniciales, patron_no, patron_si, patron_fin, sumatexto, patron_cero, patron_texto_suma, text_suma,sumaralgo,
 				output [3:0] actual_state);
 				
 logic [3:0] state, next_state;
@@ -14,7 +14,7 @@ always_ff @(posedge clk or posedge rst)
 
 always_comb
 	case(state)
-	4'd0: next_state = 4'd1;
+	4'd0: next_state = 4'd12;
 	4'd1: if(fin) next_state = 4'd7; else next_state = 4'd2;
 	4'd2: if(igual) next_state = 4'd4; else next_state = 4'd8;
 	4'd3: next_state = 4'd1;
@@ -26,6 +26,7 @@ always_comb
 	4'd9: if(igual) next_state = 4'd10; else next_state = 4'd11;
 	4'd10: next_state = 4'd1;
 	4'd11: next_state = 4'd1;
+	4'd12: next_state = 4'd1;
 	default: next_state = 4'd0;
 	endcase
 	
@@ -40,5 +41,6 @@ assign patron_cero = (state == 4'd8);
 assign patron_texto_suma = (state == 4'd10);
 assign text_suma = (state == 4'd11);
 assign actual_state = state;
+assign sumaralgo = (state == 4'd12);
 
 endmodule

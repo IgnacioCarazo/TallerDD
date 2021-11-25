@@ -1,8 +1,6 @@
-|TopModule_tb
-
-
-|TopModule_tb|TopModule:topmodule
-btn_inicio => btn_inicio.IN2
+|TopModule
+btn_inicio => _.IN1
+btn_inicio => _.IN1
 sw_sel => sw_sel.IN1
 clk => clk.IN2
 rst => rst.IN2
@@ -14,77 +12,35 @@ sw_bit_inicial[4] => sw_bit_inicial[4].IN2
 sw_bit_inicial[5] => sw_bit_inicial[5].IN2
 sw_bit_inicial[6] => sw_bit_inicial[6].IN2
 sw_bit_inicial[7] => sw_bit_inicial[7].IN2
-display_FB[0] <= FuerzaBruta:algo_2.port5
-display_FB[1] <= FuerzaBruta:algo_2.port5
-display_FB[2] <= FuerzaBruta:algo_2.port5
-display_FB[3] <= FuerzaBruta:algo_2.port5
-display_FB[4] <= FuerzaBruta:algo_2.port5
-display_FB[5] <= FuerzaBruta:algo_2.port5
-display_FB[6] <= FuerzaBruta:algo_2.port5
-display_FB[7] <= FuerzaBruta:algo_2.port5
-display_KMP[0] <= KMP:algo_1.port5
-display_KMP[1] <= KMP:algo_1.port5
-display_KMP[2] <= KMP:algo_1.port5
-display_KMP[3] <= KMP:algo_1.port5
-display_KMP[4] <= KMP:algo_1.port5
-display_KMP[5] <= KMP:algo_1.port5
-display_KMP[6] <= KMP:algo_1.port5
-display_KMP[7] <= KMP:algo_1.port5
-patron_FB[0] <= FuerzaBruta:algo_2.port6
-patron_FB[1] <= FuerzaBruta:algo_2.port6
-patron_FB[2] <= FuerzaBruta:algo_2.port6
-patron_FB[3] <= FuerzaBruta:algo_2.port6
-patron_FB[4] <= FuerzaBruta:algo_2.port6
-patron_FB[5] <= FuerzaBruta:algo_2.port6
-patron_FB[6] <= FuerzaBruta:algo_2.port6
-patron_FB[7] <= FuerzaBruta:algo_2.port6
-texto_FB[0] <= FuerzaBruta:algo_2.port7
-texto_FB[1] <= FuerzaBruta:algo_2.port7
-texto_FB[2] <= FuerzaBruta:algo_2.port7
-texto_FB[3] <= FuerzaBruta:algo_2.port7
-texto_FB[4] <= FuerzaBruta:algo_2.port7
-texto_FB[5] <= FuerzaBruta:algo_2.port7
-texto_FB[6] <= FuerzaBruta:algo_2.port7
-texto_FB[7] <= FuerzaBruta:algo_2.port7
-patron_KMP[0] <= <GND>
-patron_KMP[1] <= <GND>
-patron_KMP[2] <= <GND>
-patron_KMP[3] <= <GND>
-patron_KMP[4] <= <GND>
-patron_KMP[5] <= <GND>
-patron_KMP[6] <= <GND>
-patron_KMP[7] <= <GND>
-texto_KMP[0] <= KMP:algo_1.port7
-texto_KMP[1] <= KMP:algo_1.port7
-texto_KMP[2] <= KMP:algo_1.port7
-texto_KMP[3] <= KMP:algo_1.port7
-texto_KMP[4] <= KMP:algo_1.port7
-texto_KMP[5] <= KMP:algo_1.port7
-texto_KMP[6] <= KMP:algo_1.port7
-texto_KMP[7] <= KMP:algo_1.port7
-actual_state_FB[0] <= FuerzaBruta:algo_2.port8
-actual_state_FB[1] <= FuerzaBruta:algo_2.port8
-actual_state_FB[2] <= FuerzaBruta:algo_2.port8
-actual_state_FB[3] <= FuerzaBruta:algo_2.port8
-actual_state_KMP[0] <= KMP:algo_1.port8
-actual_state_KMP[1] <= KMP:algo_1.port8
-actual_state_KMP[2] <= KMP:algo_1.port8
-actual_state_KMP[3] <= KMP:algo_1.port8
+display_FB[0] << convertDisplay:instanciaFB.port1
+display_FB[1] << convertDisplay:instanciaFB.port1
+display_FB[2] << convertDisplay:instanciaFB.port1
+display_FB[3] << convertDisplay:instanciaFB.port1
+display_FB[4] << convertDisplay:instanciaFB.port1
+display_FB[5] << convertDisplay:instanciaFB.port1
+display_FB[6] << convertDisplay:instanciaFB.port1
+display_KMP[0] << convertDisplay:instanciaKMP.port1
+display_KMP[1] << convertDisplay:instanciaKMP.port1
+display_KMP[2] << convertDisplay:instanciaKMP.port1
+display_KMP[3] << convertDisplay:instanciaKMP.port1
+display_KMP[4] << convertDisplay:instanciaKMP.port1
+display_KMP[5] << convertDisplay:instanciaKMP.port1
+display_KMP[6] << convertDisplay:instanciaKMP.port1
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1
+|TopModule|KMP:algo_1
 inicio => inicio.IN1
-sel => ~NO_FANOUT~
+sel => sel.IN1
 clk => clk.IN6
 rst => rst.IN1
-sw_bit_inicial[0] => ~NO_FANOUT~
-sw_bit_inicial[1] => ~NO_FANOUT~
-sw_bit_inicial[2] => ~NO_FANOUT~
-sw_bit_inicial[3] => ~NO_FANOUT~
-sw_bit_inicial[4] => ~NO_FANOUT~
-sw_bit_inicial[5] => ~NO_FANOUT~
-sw_bit_inicial[6] => ~NO_FANOUT~
-sw_bit_inicial[7] => ~NO_FANOUT~
+sw_bit_inicial[0] => sw_bit_inicial[0].IN1
+sw_bit_inicial[1] => sw_bit_inicial[1].IN1
+sw_bit_inicial[2] => sw_bit_inicial[2].IN1
+sw_bit_inicial[3] => sw_bit_inicial[3].IN1
+sw_bit_inicial[4] => sw_bit_inicial[4].IN1
+sw_bit_inicial[5] => sw_bit_inicial[5].IN1
+sw_bit_inicial[6] => sw_bit_inicial[6].IN1
+sw_bit_inicial[7] => sw_bit_inicial[7].IN1
 instancias[0] <= Counter2:contador_instancias.port3
 instancias[1] <= Counter2:contador_instancias.port3
 instancias[2] <= Counter2:contador_instancias.port3
@@ -93,29 +49,9 @@ instancias[4] <= Counter2:contador_instancias.port3
 instancias[5] <= Counter2:contador_instancias.port3
 instancias[6] <= Counter2:contador_instancias.port3
 instancias[7] <= Counter2:contador_instancias.port3
-patron[0] <= patron[0].DB_MAX_OUTPUT_PORT_TYPE
-patron[1] <= patron[1].DB_MAX_OUTPUT_PORT_TYPE
-patron[2] <= patron[2].DB_MAX_OUTPUT_PORT_TYPE
-patron[3] <= patron[3].DB_MAX_OUTPUT_PORT_TYPE
-patron[4] <= patron[4].DB_MAX_OUTPUT_PORT_TYPE
-patron[5] <= patron[5].DB_MAX_OUTPUT_PORT_TYPE
-patron[6] <= patron[6].DB_MAX_OUTPUT_PORT_TYPE
-patron[7] <= patron[7].DB_MAX_OUTPUT_PORT_TYPE
-texto[0] <= texto[0].DB_MAX_OUTPUT_PORT_TYPE
-texto[1] <= texto[1].DB_MAX_OUTPUT_PORT_TYPE
-texto[2] <= texto[2].DB_MAX_OUTPUT_PORT_TYPE
-texto[3] <= texto[3].DB_MAX_OUTPUT_PORT_TYPE
-texto[4] <= texto[4].DB_MAX_OUTPUT_PORT_TYPE
-texto[5] <= texto[5].DB_MAX_OUTPUT_PORT_TYPE
-texto[6] <= texto[6].DB_MAX_OUTPUT_PORT_TYPE
-texto[7] <= texto[7].DB_MAX_OUTPUT_PORT_TYPE
-actual_state[0] <= FSMKMP:fsm.port13
-actual_state[1] <= FSMKMP:fsm.port13
-actual_state[2] <= FSMKMP:fsm.port13
-actual_state[3] <= FSMKMP:fsm.port13
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|FSMKMP:fsm
+|TopModule|KMP:algo_1|FSMKMP:fsm
 clk => state~1.DATAIN
 rst => state~3.DATAIN
 finTexto => Selector0.IN3
@@ -134,13 +70,14 @@ rstPatron <= rstPatron.DB_MAX_OUTPUT_PORT_TYPE
 sumaInstancia <= sumaInstancia.DB_MAX_OUTPUT_PORT_TYPE
 posPorT <= posPorT.DB_MAX_OUTPUT_PORT_TYPE
 sumaTexto <= sumaTexto.DB_MAX_OUTPUT_PORT_TYPE
-actual_state[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-actual_state[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-actual_state[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-actual_state[3] <= actual_state.DB_MAX_OUTPUT_PORT_TYPE
+sumaralgo <= sumaralgo.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+actual_state[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Comparator:finTexto
+|TopModule|KMP:algo_1|Comparator:finTexto
 A[0] => Equal0.IN13
 A[1] => Equal0.IN12
 A[2] => Equal0.IN11
@@ -172,7 +109,7 @@ B[13] => Equal0.IN14
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Comparator:letraIgual
+|TopModule|KMP:algo_1|Comparator:letraIgual
 A[0] => Equal0.IN7
 A[1] => Equal0.IN6
 A[2] => Equal0.IN5
@@ -192,7 +129,7 @@ B[7] => Equal0.IN8
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Comparator:FinPatron
+|TopModule|KMP:algo_1|Comparator:FinPatron
 A[0] => Equal0.IN2
 A[1] => Equal0.IN1
 A[2] => Equal0.IN0
@@ -202,7 +139,7 @@ B[2] => Equal0.IN3
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Counter2:contador_instancias
+|TopModule|KMP:algo_1|Counter2:contador_instancias
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -237,7 +174,7 @@ Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Comparator:menor
+|TopModule|KMP:algo_1|Comparator:menor
 A[0] => Equal0.IN2
 A[1] => Equal0.IN1
 A[2] => Equal0.IN0
@@ -247,7 +184,7 @@ B[2] => Equal0.IN3
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|rom:patron_mem
+|TopModule|KMP:algo_1|rom:patron_mem
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -262,7 +199,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component
+|TopModule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -306,7 +243,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
+|TopModule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -349,7 +286,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Counter2:contador_patron
+|TopModule|KMP:algo_1|Counter2:contador_patron
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -384,7 +321,7 @@ Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|example:exampleText
+|TopModule|KMP:algo_1|example:exampleText
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -410,7 +347,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component
+|TopModule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -465,7 +402,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
+|TopModule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -696,14 +633,14 @@ q_a[6] <= mux_lfb:mux2.result[6]
 q_a[7] <= mux_lfb:mux2.result[7]
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|decode_u0a:rden_decode
+|TopModule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|decode_u0a:rden_decode
 data[0] => eq_node[1].IN0
 data[0] => eq_node[0].IN0
 eq[0] <= eq_node[0].DB_MAX_OUTPUT_PORT_TYPE
 eq[1] <= eq_node[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|mux_lfb:mux2
+|TopModule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|mux_lfb:mux2
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -746,7 +683,7 @@ sel[0] => l1_w7_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|TopModule_tb|TopModule:topmodule|KMP:algo_1|Counter2:contador_text
+|TopModule|KMP:algo_1|counterCopy:contador_text
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -775,20 +712,42 @@ rst => Q[10]~reg0.ACLR
 rst => Q[11]~reg0.ACLR
 rst => Q[12]~reg0.ACLR
 rst => Q[13]~reg0.ACLR
-en => Q[0]~reg0.ENA
-en => Q[13]~reg0.ENA
-en => Q[12]~reg0.ENA
-en => Q[11]~reg0.ENA
-en => Q[10]~reg0.ENA
-en => Q[9]~reg0.ENA
-en => Q[8]~reg0.ENA
-en => Q[7]~reg0.ENA
-en => Q[6]~reg0.ENA
-en => Q[5]~reg0.ENA
-en => Q[4]~reg0.ENA
-en => Q[3]~reg0.ENA
-en => Q[2]~reg0.ENA
-en => Q[1]~reg0.ENA
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+inputBits[0] => Add1.IN14
+inputBits[1] => Add1.IN13
+inputBits[2] => Add1.IN12
+inputBits[3] => Add1.IN11
+inputBits[4] => Add1.IN10
+inputBits[5] => Add1.IN9
+inputBits[6] => Add1.IN8
+inputBits[7] => Add1.IN7
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -805,19 +764,19 @@ Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2
+|TopModule|FuerzaBruta:algo_2
 inicio => inicio.IN1
 sel => sel.IN1
 clk => clk.IN6
 rst => rst.IN3
-sw_bit_inicial[0] => ~NO_FANOUT~
-sw_bit_inicial[1] => ~NO_FANOUT~
-sw_bit_inicial[2] => ~NO_FANOUT~
-sw_bit_inicial[3] => ~NO_FANOUT~
-sw_bit_inicial[4] => ~NO_FANOUT~
-sw_bit_inicial[5] => ~NO_FANOUT~
-sw_bit_inicial[6] => ~NO_FANOUT~
-sw_bit_inicial[7] => ~NO_FANOUT~
+sw_bit_inicial[0] => sw_bit_inicial[0].IN1
+sw_bit_inicial[1] => sw_bit_inicial[1].IN1
+sw_bit_inicial[2] => sw_bit_inicial[2].IN1
+sw_bit_inicial[3] => sw_bit_inicial[3].IN1
+sw_bit_inicial[4] => sw_bit_inicial[4].IN1
+sw_bit_inicial[5] => sw_bit_inicial[5].IN1
+sw_bit_inicial[6] => sw_bit_inicial[6].IN1
+sw_bit_inicial[7] => sw_bit_inicial[7].IN1
 instancias[0] <= Counter2:contador_instancias.port3
 instancias[1] <= Counter2:contador_instancias.port3
 instancias[2] <= Counter2:contador_instancias.port3
@@ -826,29 +785,9 @@ instancias[4] <= Counter2:contador_instancias.port3
 instancias[5] <= Counter2:contador_instancias.port3
 instancias[6] <= Counter2:contador_instancias.port3
 instancias[7] <= Counter2:contador_instancias.port3
-patron[0] <= patron[0].DB_MAX_OUTPUT_PORT_TYPE
-patron[1] <= patron[1].DB_MAX_OUTPUT_PORT_TYPE
-patron[2] <= patron[2].DB_MAX_OUTPUT_PORT_TYPE
-patron[3] <= patron[3].DB_MAX_OUTPUT_PORT_TYPE
-patron[4] <= patron[4].DB_MAX_OUTPUT_PORT_TYPE
-patron[5] <= patron[5].DB_MAX_OUTPUT_PORT_TYPE
-patron[6] <= patron[6].DB_MAX_OUTPUT_PORT_TYPE
-patron[7] <= patron[7].DB_MAX_OUTPUT_PORT_TYPE
-texto[0] <= texto[0].DB_MAX_OUTPUT_PORT_TYPE
-texto[1] <= texto[1].DB_MAX_OUTPUT_PORT_TYPE
-texto[2] <= texto[2].DB_MAX_OUTPUT_PORT_TYPE
-texto[3] <= texto[3].DB_MAX_OUTPUT_PORT_TYPE
-texto[4] <= texto[4].DB_MAX_OUTPUT_PORT_TYPE
-texto[5] <= texto[5].DB_MAX_OUTPUT_PORT_TYPE
-texto[6] <= texto[6].DB_MAX_OUTPUT_PORT_TYPE
-texto[7] <= texto[7].DB_MAX_OUTPUT_PORT_TYPE
-actual_state[0] <= FSM:control.port15
-actual_state[1] <= FSM:control.port15
-actual_state[2] <= FSM:control.port15
-actual_state[3] <= FSM:control.port15
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|FSM:control
+|TopModule|FuerzaBruta:algo_2|FSM:control
 clk => state~1.DATAIN
 rst => state~3.DATAIN
 fin => Selector0.IN3
@@ -869,13 +808,14 @@ sumatexto <= sumatexto.DB_MAX_OUTPUT_PORT_TYPE
 patron_cero <= patron_cero.DB_MAX_OUTPUT_PORT_TYPE
 patron_texto_suma <= patron_texto_suma.DB_MAX_OUTPUT_PORT_TYPE
 text_suma <= text_suma.DB_MAX_OUTPUT_PORT_TYPE
+sumaralgo <= sumaralgo.DB_MAX_OUTPUT_PORT_TYPE
 actual_state[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
 actual_state[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
 actual_state[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 actual_state[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finTexto
+|TopModule|FuerzaBruta:algo_2|Comparator:finTexto
 A[0] => Equal0.IN13
 A[1] => Equal0.IN12
 A[2] => Equal0.IN11
@@ -907,7 +847,7 @@ B[13] => Equal0.IN14
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|Comparator:letraIgual
+|TopModule|FuerzaBruta:algo_2|Comparator:letraIgual
 A[0] => Equal0.IN7
 A[1] => Equal0.IN6
 A[2] => Equal0.IN5
@@ -927,7 +867,7 @@ B[7] => Equal0.IN8
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finPatron
+|TopModule|FuerzaBruta:algo_2|Comparator:finPatron
 A[0] => Equal0.IN2
 A[1] => Equal0.IN1
 A[2] => Equal0.IN0
@@ -937,7 +877,7 @@ B[2] => Equal0.IN3
 equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_instancias
+|TopModule|FuerzaBruta:algo_2|Counter2:contador_instancias
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -972,7 +912,7 @@ Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem
+|TopModule|FuerzaBruta:algo_2|rom:patron_mem
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -987,7 +927,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component
+|TopModule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1031,7 +971,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
+|TopModule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1074,7 +1014,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_patron
+|TopModule|FuerzaBruta:algo_2|Counter2:contador_patron
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -1109,7 +1049,7 @@ Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText
+|TopModule|FuerzaBruta:algo_2|example:exampleText
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -1135,7 +1075,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component
+|TopModule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1190,7 +1130,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
+|TopModule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1421,14 +1361,14 @@ q_a[6] <= mux_lfb:mux2.result[6]
 q_a[7] <= mux_lfb:mux2.result[7]
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|decode_u0a:rden_decode
+|TopModule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|decode_u0a:rden_decode
 data[0] => eq_node[1].IN0
 data[0] => eq_node[0].IN0
 eq[0] <= eq_node[0].DB_MAX_OUTPUT_PORT_TYPE
 eq[1] <= eq_node[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|mux_lfb:mux2
+|TopModule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|mux_lfb:mux2
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -1471,7 +1411,7 @@ sel[0] => l1_w7_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_text
+|TopModule|FuerzaBruta:algo_2|counterCopy:contador_text
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -1500,20 +1440,42 @@ rst => Q[10]~reg0.ACLR
 rst => Q[11]~reg0.ACLR
 rst => Q[12]~reg0.ACLR
 rst => Q[13]~reg0.ACLR
-en => Q[0]~reg0.ENA
-en => Q[13]~reg0.ENA
-en => Q[12]~reg0.ENA
-en => Q[11]~reg0.ENA
-en => Q[10]~reg0.ENA
-en => Q[9]~reg0.ENA
-en => Q[8]~reg0.ENA
-en => Q[7]~reg0.ENA
-en => Q[6]~reg0.ENA
-en => Q[5]~reg0.ENA
-en => Q[4]~reg0.ENA
-en => Q[3]~reg0.ENA
-en => Q[2]~reg0.ENA
-en => Q[1]~reg0.ENA
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+suma => Q.OUTPUTSELECT
+inputBits[0] => Add1.IN14
+inputBits[1] => Add1.IN13
+inputBits[2] => Add1.IN12
+inputBits[3] => Add1.IN11
+inputBits[4] => Add1.IN10
+inputBits[5] => Add1.IN9
+inputBits[6] => Add1.IN8
+inputBits[7] => Add1.IN7
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1528,5 +1490,41 @@ Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|convertDisplay:instanciaKMP
+instancias[0] => Decoder0.IN7
+instancias[1] => Decoder0.IN6
+instancias[2] => Decoder0.IN5
+instancias[3] => Decoder0.IN4
+instancias[4] => Decoder0.IN3
+instancias[5] => Decoder0.IN2
+instancias[6] => Decoder0.IN1
+instancias[7] => Decoder0.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= display[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopModule|convertDisplay:instanciaFB
+instancias[0] => Decoder0.IN7
+instancias[1] => Decoder0.IN6
+instancias[2] => Decoder0.IN5
+instancias[3] => Decoder0.IN4
+instancias[4] => Decoder0.IN3
+instancias[5] => Decoder0.IN2
+instancias[6] => Decoder0.IN1
+instancias[7] => Decoder0.IN0
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= display[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

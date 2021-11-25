@@ -2,7 +2,112 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "display_FB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_FB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_FB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_FB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_FB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_FB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_FB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display_KMP[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "btn_inicio",
+					"strict" : false
+				},
+				{
+					"name" : "sw_sel",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_bit_inicial[4]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

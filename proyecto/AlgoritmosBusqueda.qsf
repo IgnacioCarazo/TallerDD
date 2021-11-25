@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY TopModule_tb
+set_global_assignment -name TOP_LEVEL_ENTITY TopModule
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:51:46  OCTOBER 25, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -65,13 +65,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_location_assignment PIN_AE26 -to display_instancias[0]
-set_location_assignment PIN_AE27 -to display_instancias[1]
-set_location_assignment PIN_AE28 -to display_instancias[2]
-set_location_assignment PIN_AG27 -to display_instancias[3]
-set_location_assignment PIN_AF28 -to display_instancias[4]
-set_location_assignment PIN_AG28 -to display_instancias[5]
-set_location_assignment PIN_AH28 -to display_instancias[6]
 set_location_assignment PIN_AB12 -to sw_bit_inicial[0]
 set_location_assignment PIN_AC12 -to sw_bit_inicial[1]
 set_location_assignment PIN_AF9 -to sw_bit_inicial[2]
@@ -86,4 +79,22 @@ set_global_assignment -name SYSTEMVERILOG_FILE TopModule_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AE26 -to display_KMP[0]
+set_location_assignment PIN_AE27 -to display_KMP[1]
+set_location_assignment PIN_AE28 -to display_KMP[2]
+set_location_assignment PIN_AG27 -to display_KMP[3]
+set_location_assignment PIN_AF28 -to display_KMP[4]
+set_location_assignment PIN_AG28 -to display_KMP[5]
+set_location_assignment PIN_AH28 -to display_KMP[6]
+set_global_assignment -name SYSTEMVERILOG_FILE convertDisplay.sv
+set_location_assignment PIN_AJ29 -to display_FB[0]
+set_location_assignment PIN_AH29 -to display_FB[1]
+set_location_assignment PIN_AH30 -to display_FB[2]
+set_location_assignment PIN_AG30 -to display_FB[3]
+set_location_assignment PIN_AF29 -to display_FB[4]
+set_location_assignment PIN_AF30 -to display_FB[5]
+set_location_assignment PIN_AD27 -to display_FB[6]
+set_location_assignment PIN_AE12 -to rst
+set_global_assignment -name SYSTEMVERILOG_FILE output_files/counterCopy.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

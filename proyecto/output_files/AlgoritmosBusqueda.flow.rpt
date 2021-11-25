@@ -1,5 +1,5 @@
 Flow report for AlgoritmosBusqueda
-Wed Nov 24 18:59:04 2021
+Thu Nov 25 09:34:03 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,24 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Wed Nov 24 18:59:04 2021       ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; AlgoritmosBusqueda                          ;
-; Top-level Entity Name       ; TopModule_tb                                ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA5F31C6                                ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Nov 25 09:34:03 2021       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; AlgoritmosBusqueda                          ;
+; Top-level Entity Name           ; TopModule                                   ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 70 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 80                                          ;
+; Total pins                      ; 26 / 457 ( 6 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 177,120 / 4,065,280 ( 4 % )                 ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,57 +68,69 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2021 18:58:50 ;
+; Start date & time ; 11/25/2021 09:28:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AlgoritmosBusqueda  ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                  ;
-+-------------------------------------+----------------------------------------+--------------------+--------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name  ; Section Id     ;
-+-------------------------------------+----------------------------------------+--------------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 52243218829.163780193002956            ; --                 ; --           ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                 ; --           ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>             ; --           ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --           ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                 ; --           ; --             ;
-; MISC_FILE                           ; rom_bb.v                               ; --                 ; --           ; --             ;
-; MISC_FILE                           ; text_rom_bb.v                          ; --                 ; --           ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                 ; TopModule_tb ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                 ; TopModule_tb ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                 ; TopModule_tb ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                 ; --           ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                 ; --           ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                 ; --           ; --             ;
-; TOP_LEVEL_ENTITY                    ; TopModule_tb                           ; AlgoritmosBusqueda ; --           ; --             ;
-+-------------------------------------+----------------------------------------+--------------------+--------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+----------------------------------------+--------------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+--------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 10995770589202.163785408403392         ; --                 ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                 ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>             ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                 ; --          ; --             ;
+; MISC_FILE                           ; rom_bb.v                               ; --                 ; --          ; --             ;
+; MISC_FILE                           ; text_rom_bb.v                          ; --                 ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                 ; TopModule   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                 ; TopModule   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                 ; TopModule   ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                 ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                 ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                 ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; TopModule                              ; AlgoritmosBusqueda ; --          ; --             ;
++-------------------------------------+----------------------------------------+--------------------+-------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:15     ; 1.0                     ; 4776 MB             ; 00:00:18                           ;
-; Total                  ; 00:00:15     ; --                      ; --                  ; 00:00:18                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:01:36     ; 1.0                     ; 4815 MB             ; 00:01:03                           ;
+; Fitter               ; 00:03:11     ; 1.0                     ; 6141 MB             ; 00:03:03                           ;
+; Assembler            ; 00:00:23     ; 1.0                     ; 4839 MB             ; 00:00:18                           ;
+; Timing Analyzer      ; 00:00:25     ; 1.1                     ; 5117 MB             ; 00:00:17                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4744 MB             ; 00:00:04                           ;
+; Total                ; 00:05:40     ; --                      ; --                  ; 00:04:45                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-J33VUR9  ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-ERBNQHI  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off AlgoritmosBusqueda -c AlgoritmosBusqueda --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off AlgoritmosBusqueda -c AlgoritmosBusqueda
+quartus_fit --read_settings_files=off --write_settings_files=off AlgoritmosBusqueda -c AlgoritmosBusqueda
+quartus_asm --read_settings_files=off --write_settings_files=off AlgoritmosBusqueda -c AlgoritmosBusqueda
+quartus_sta AlgoritmosBusqueda -c AlgoritmosBusqueda
+quartus_eda --read_settings_files=off --write_settings_files=off AlgoritmosBusqueda -c AlgoritmosBusqueda
 
 
 
