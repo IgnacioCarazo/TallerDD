@@ -12,114 +12,138 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:41 on Nov 24,2021
+# Start time: 19:03:27 on Nov 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v 
 # -- Compiling module rom
 # 
 # Top level modules:
 # 	rom
-# End time: 18:26:41 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:27 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:42 on Nov 24,2021
+# Start time: 19:03:28 on Nov 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v 
 # -- Compiling module example
 # 
 # Top level modules:
 # 	example
-# End time: 18:26:42 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:28 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:42 on Nov 24,2021
+# Start time: 19:03:28 on Nov 24,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSM.sv 
 # -- Compiling module FSM
 # 
 # Top level modules:
 # 	FSM
-# End time: 18:26:42 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:28 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:42 on Nov 24,2021
+# Start time: 19:03:28 on Nov 24,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv 
 # -- Compiling module FuerzaBruta
 # 
 # Top level modules:
 # 	FuerzaBruta
-# End time: 18:26:43 on Nov 24,2021, Elapsed time: 0:00:01
+# End time: 19:03:28 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Comparator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:43 on Nov 24,2021
+# Start time: 19:03:28 on Nov 24,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Comparator.sv 
 # -- Compiling module Comparator
 # 
 # Top level modules:
 # 	Comparator
-# End time: 18:26:43 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:28 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Counter2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:43 on Nov 24,2021
+# Start time: 19:03:28 on Nov 24,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Counter2.sv 
 # -- Compiling module Counter2
 # 
 # Top level modules:
 # 	Counter2
-# End time: 18:26:43 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:28 on Nov 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSMKMP.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:03:28 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FSMKMP.sv 
+# -- Compiling module FSMKMP
+# 
+# Top level modules:
+# 	FSMKMP
+# End time: 19:03:28 on Nov 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:03:28 on Nov 24,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv 
+# -- Compiling module KMP
+# 
+# Top level modules:
+# 	KMP
+# End time: 19:03:29 on Nov 24,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:43 on Nov 24,2021
+# Start time: 19:03:29 on Nov 24,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv 
 # -- Compiling module TopModule
 # 
 # Top level modules:
 # 	TopModule
-# End time: 18:26:43 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:29 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Ignacio\ Carazo/Desktop/TallerDD/proyecto {C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:43 on Nov 24,2021
+# Start time: 19:03:29 on Nov 24,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto" C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv 
 # -- Compiling module TopModule_tb
 # 
 # Top level modules:
 # 	TopModule_tb
-# End time: 18:26:43 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:03:29 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim -L altera_mf_ver -L lpm_ver TopModule_tb
 # vsim -L altera_mf_ver -L lpm_ver TopModule_tb 
-# Start time: 18:26:54 on Nov 24,2021
+# Start time: 19:04:18 on Nov 24,2021
 # Loading sv_std.std
 # Loading work.TopModule_tb
 # Loading work.TopModule
-# Loading work.FuerzaBruta
-# Loading work.FSM
+# Loading work.KMP
+# Loading work.FSMKMP
 # Loading work.Comparator
 # Loading work.Counter2
 # Loading work.rom
 # Loading altera_mf_ver.altsyncram
 # Loading work.example
+# Loading work.FuerzaBruta
+# Loading work.FSM
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (3) for port 'Q'. The port definition is at: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Counter2.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TopModule_tb/topmodule/algo_1/contador_patron File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 26
 # ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (3) for port 'Q'. The port definition is at: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/Counter2.sv(2).
 #    Time: 0 ps  Iteration: 0  Instance: /TopModule_tb/topmodule/algo_2/contador_patron File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 26
 add wave -position end  sim:/TopModule_tb/btn_inicio
 add wave -position end  sim:/TopModule_tb/sw_sel
 add wave -position end  sim:/TopModule_tb/clk
 add wave -position end  sim:/TopModule_tb/rst
-add wave -position end  sim:/TopModule_tb/sw_bit_inicial
-add wave -position end  sim:/TopModule_tb/display_instancias
-add wave -position end  sim:/TopModule_tb/patron
-add wave -position end  sim:/TopModule_tb/texto
-add wave -position end  sim:/TopModule_tb/actual_state
+add wave -position end  sim:/TopModule_tb/display_FB
+add wave -position end  sim:/TopModule_tb/display_KMP
+add wave -position end  sim:/TopModule_tb/patron_KMP
+add wave -position end  sim:/TopModule_tb/texto_KMP
+add wave -position end  sim:/TopModule_tb/actual_state_KMP
 run 400
 run 100
 run 1000
-# End time: 18:28:34 on Nov 24,2021, Elapsed time: 0:01:40
-# Errors: 0, Warnings: 1
+# End time: 20:05:05 on Nov 24,2021, Elapsed time: 1:00:47
+# Errors: 0, Warnings: 2

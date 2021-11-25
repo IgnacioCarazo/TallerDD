@@ -1,5 +1,5 @@
 Analysis & Elaboration report for AlgoritmosBusqueda
-Wed Nov 24 18:26:21 2021
+Wed Nov 24 18:59:04 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,25 +10,42 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
-  5. Source assignments for TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
-  6. Source assignments for TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
-  7. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finTexto
-  8. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Comparator:letraIgual
-  9. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finPatron
- 10. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_instancias
- 11. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component
- 12. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_patron
- 13. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component
- 14. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_text
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Analysis & Elaboration Settings
- 17. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_patron"
- 18. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finPatron"
- 19. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finTexto"
- 20. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|FSM:control"
- 21. Port Connectivity Checks: "TopModule:topmodule"
- 22. Analysis & Elaboration Messages
- 23. Analysis & Elaboration Suppressed Messages
+  5. Source assignments for TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
+  6. Source assignments for TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
+  7. Source assignments for TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated
+  8. Source assignments for TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated
+  9. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:finTexto
+ 10. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:letraIgual
+ 11. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:FinPatron
+ 12. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Counter2:contador_instancias
+ 13. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:menor
+ 14. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component
+ 15. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Counter2:contador_patron
+ 16. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Counter2:contador_text
+ 18. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finTexto
+ 19. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Comparator:letraIgual
+ 20. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finPatron
+ 21. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_instancias
+ 22. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component
+ 23. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_patron
+ 24. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_text
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Analysis & Elaboration Settings
+ 28. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_patron"
+ 29. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finPatron"
+ 30. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finTexto"
+ 31. Port Connectivity Checks: "TopModule:topmodule|FuerzaBruta:algo_2|FSM:control"
+ 32. Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Counter2:contador_patron"
+ 33. Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Comparator:menor"
+ 34. Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Comparator:FinPatron"
+ 35. Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Comparator:finTexto"
+ 36. Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|FSMKMP:fsm"
+ 37. Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1"
+ 38. Port Connectivity Checks: "TopModule:topmodule"
+ 39. Analysis & Elaboration Messages
+ 40. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -55,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Nov 24 18:26:21 2021       ;
+; Analysis & Elaboration Status ; Successful - Wed Nov 24 18:59:04 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; AlgoritmosBusqueda                          ;
 ; Top-level Entity Name         ; TopModule_tb                                ;
@@ -91,8 +108,27 @@ https://fpgasoftware.intel.com/eula.
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                     ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |TopModule_tb|TopModule:topmodule|KMP:algo_1|rom:patron_mem         ; rom.v           ;
 ; Altera ; ROM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |TopModule_tb|TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem ; rom.v           ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                    ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                     ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                         ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                          ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -111,6 +147,198 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+--------------------+------+------------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                  ;
 +---------------------------------+--------------------+------+------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:finTexto ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; N              ; 14    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:letraIgual ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:FinPatron ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Counter2:contador_instancias ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Comparator:menor ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                           ;
++------------------------------------+----------------------+----------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                 ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                        ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                        ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                                 ;
+; WIDTHAD_A                          ; 3                    ; Signed Integer                                                 ;
+; NUMWORDS_A                         ; 5                    ; Signed Integer                                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                        ;
+; WIDTH_B                            ; 1                    ; Untyped                                                        ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                        ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                        ;
+; INIT_FILE                          ; Patron.mif           ; Untyped                                                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                        ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                        ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_c2g1      ; Untyped                                                        ;
++------------------------------------+----------------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Counter2:contador_patron ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                             ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                             ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                                      ;
+; WIDTHAD_A                          ; 14                   ; Signed Integer                                                      ;
+; NUMWORDS_A                         ; 11065                ; Signed Integer                                                      ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; WIDTH_B                            ; 1                    ; Untyped                                                             ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                             ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                             ;
+; INIT_FILE                          ; example.mif          ; Untyped                                                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                             ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                             ;
+; CBXI_PARAMETER                     ; altsyncram_9mf1      ; Untyped                                                             ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TopModule:topmodule|KMP:algo_1|Counter2:contador_text ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; N              ; 14    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -300,7 +528,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+--------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                      ;
 +-------------------------------------------+--------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                                          ;
+; Number of entity instances                ; 4                                                                                          ;
+; Entity Instance                           ; TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component              ;
+;     -- OPERATION_MODE                     ; ROM                                                                                        ;
+;     -- WIDTH_A                            ; 8                                                                                          ;
+;     -- NUMWORDS_A                         ; 5                                                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                               ;
+;     -- WIDTH_B                            ; 1                                                                                          ;
+;     -- NUMWORDS_B                         ; 1                                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                  ;
+; Entity Instance                           ; TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component         ;
+;     -- OPERATION_MODE                     ; ROM                                                                                        ;
+;     -- WIDTH_A                            ; 8                                                                                          ;
+;     -- NUMWORDS_A                         ; 11065                                                                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                     ;
+;     -- WIDTH_B                            ; 1                                                                                          ;
+;     -- NUMWORDS_B                         ; 1                                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                  ;
 ; Entity Instance                           ; TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component      ;
 ;     -- OPERATION_MODE                     ; ROM                                                                                        ;
 ;     -- WIDTH_A                            ; 8                                                                                          ;
@@ -458,16 +708,84 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TopModule:topmodule"                                                                              ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port               ; Type   ; Severity ; Details                                                                             ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
-; display_instancias ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; patron             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; texto              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; actual_state       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Counter2:contador_patron"                                                             ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Q    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (3 bits) it drives; bit(s) "Q[7..3]" have no fanouts ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Comparator:menor" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Comparator:FinPatron" ;
++---------+-------+----------+----------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                            ;
++---------+-------+----------+----------------------------------------------------+
+; A[1..0] ; Input ; Info     ; Stuck at GND                                       ;
+; A[2]    ; Input ; Info     ; Stuck at VCC                                       ;
++---------+-------+----------+----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|Comparator:finTexto" ;
++---------+-------+----------+---------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                           ;
++---------+-------+----------+---------------------------------------------------+
+; A[9..8] ; Input ; Info     ; Stuck at VCC                                      ;
+; A[5..3] ; Input ; Info     ; Stuck at VCC                                      ;
+; A[7..6] ; Input ; Info     ; Stuck at GND                                      ;
+; A[2..0] ; Input ; Info     ; Stuck at GND                                      ;
+; A[13]   ; Input ; Info     ; Stuck at VCC                                      ;
+; A[12]   ; Input ; Info     ; Stuck at GND                                      ;
+; A[11]   ; Input ; Info     ; Stuck at VCC                                      ;
+; A[10]   ; Input ; Info     ; Stuck at GND                                      ;
++---------+-------+----------+---------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1|FSMKMP:fsm"                                                                                                                                    ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                               ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sumaTexto    ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
+; actual_state ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                              ;
++--------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule|KMP:algo_1"                                                                                             ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                   ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; patron ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "patron[7..1]" have no fanouts ;
+; patron ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                       ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TopModule:topmodule"                                                                            ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; display_FB       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; display_KMP      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; patron_FB        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; texto_FB         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; patron_KMP       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; texto_KMP        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; actual_state_FB  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; actual_state_KMP ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -476,7 +794,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 24 18:26:03 2021
+    Info: Processing started: Wed Nov 24 18:58:49 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AlgoritmosBusqueda -c AlgoritmosBusqueda --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -506,23 +824,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file topmodu
     Info (12023): Found entity 1: TopModule File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file topmodule_tb.sv
     Info (12023): Found entity 1: TopModule_tb File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at KMP.sv(30): created implicit net for "patron_si" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at KMP.sv(30): created implicit net for "patron_fin" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at KMP.sv(30): created implicit net for "patron_texto_suma" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at KMP.sv(30): created implicit net for "text_suma" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at TopModule.sv(7): created implicit net for "patron" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv Line: 7
 Info (12127): Elaborating entity "TopModule_tb" for the top level hierarchy
 Warning (10755): Verilog HDL warning at TopModule_tb.sv(14): assignments to clk create a combinational loop File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv Line: 14
 Info (12128): Elaborating entity "TopModule" for hierarchy "TopModule:topmodule" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv Line: 10
-Info (12128): Elaborating entity "FuerzaBruta" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv Line: 8
-Info (12128): Elaborating entity "FSM" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|FSM:control" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 13
-Info (12128): Elaborating entity "Comparator" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finTexto" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 17
-Info (12128): Elaborating entity "Comparator" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:letraIgual" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 19
-Info (12128): Elaborating entity "Comparator" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|Comparator:finPatron" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 21
-Info (12128): Elaborating entity "Counter2" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_instancias" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 23
-Info (12128): Elaborating entity "rom" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 25
-Info (12128): Elaborating entity "altsyncram" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v Line: 82
-Info (12130): Elaborated megafunction instantiation "TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v Line: 82
-Info (12133): Instantiated megafunction "TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v Line: 82
+Warning (10034): Output port "patron_KMP" at TopModule.sv(3) has no driver File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv Line: 3
+Info (12128): Elaborating entity "KMP" for hierarchy "TopModule:topmodule|KMP:algo_1" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv Line: 7
+Info (12128): Elaborating entity "FSMKMP" for hierarchy "TopModule:topmodule|KMP:algo_1|FSMKMP:fsm" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 12
+Info (12128): Elaborating entity "Comparator" for hierarchy "TopModule:topmodule|KMP:algo_1|Comparator:finTexto" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 15
+Info (12128): Elaborating entity "Comparator" for hierarchy "TopModule:topmodule|KMP:algo_1|Comparator:letraIgual" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 17
+Info (12128): Elaborating entity "Comparator" for hierarchy "TopModule:topmodule|KMP:algo_1|Comparator:FinPatron" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 19
+Info (12128): Elaborating entity "Counter2" for hierarchy "TopModule:topmodule|KMP:algo_1|Counter2:contador_instancias" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 21
+Info (12128): Elaborating entity "rom" for hierarchy "TopModule:topmodule|KMP:algo_1|rom:patron_mem" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 25
+Info (12128): Elaborating entity "altsyncram" for hierarchy "TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v Line: 82
+Info (12133): Instantiated megafunction "TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/rom.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -539,13 +855,13 @@ Info (12133): Instantiated megafunction "TopModule:topmodule|FuerzaBruta:algo_2|
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c2g1.tdf
     Info (12023): Found entity 1: altsyncram_c2g1 File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/altsyncram_c2g1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_c2g1" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_c2g1" for hierarchy "TopModule:topmodule|KMP:algo_1|rom:patron_mem|altsyncram:altsyncram_component|altsyncram_c2g1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (12125): Using design file example.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: example File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 40
-Info (12128): Elaborating entity "example" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 29
-Info (12128): Elaborating entity "altsyncram" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 82
-Info (12130): Elaborated megafunction instantiation "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 82
-Info (12133): Instantiated megafunction "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 82
+Info (12128): Elaborating entity "example" for hierarchy "TopModule:topmodule|KMP:algo_1|example:exampleText" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 29
+Info (12128): Elaborating entity "altsyncram" for hierarchy "TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 82
+Info (12130): Elaborated megafunction instantiation "TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 82
+Info (12133): Instantiated megafunction "TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/example.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -562,23 +878,25 @@ Info (12133): Instantiated megafunction "TopModule:topmodule|FuerzaBruta:algo_2|
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9mf1.tdf
     Info (12023): Found entity 1: altsyncram_9mf1 File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/altsyncram_9mf1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_9mf1" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_9mf1" for hierarchy "TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_u0a.tdf
     Info (12023): Found entity 1: decode_u0a File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/decode_u0a.tdf Line: 23
-Info (12128): Elaborating entity "decode_u0a" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|decode_u0a:rden_decode" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/altsyncram_9mf1.tdf Line: 41
+Info (12128): Elaborating entity "decode_u0a" for hierarchy "TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|decode_u0a:rden_decode" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/altsyncram_9mf1.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_lfb.tdf
     Info (12023): Found entity 1: mux_lfb File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/mux_lfb.tdf Line: 23
-Info (12128): Elaborating entity "mux_lfb" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|mux_lfb:mux2" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/altsyncram_9mf1.tdf Line: 42
-Info (12128): Elaborating entity "Counter2" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|Counter2:contador_text" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 30
+Info (12128): Elaborating entity "mux_lfb" for hierarchy "TopModule:topmodule|KMP:algo_1|example:exampleText|altsyncram:altsyncram_component|altsyncram_9mf1:auto_generated|mux_lfb:mux2" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/db/altsyncram_9mf1.tdf Line: 42
+Info (12128): Elaborating entity "Counter2" for hierarchy "TopModule:topmodule|KMP:algo_1|Counter2:contador_text" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/KMP.sv Line: 30
+Info (12128): Elaborating entity "FuerzaBruta" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule.sv Line: 8
+Info (12128): Elaborating entity "FSM" for hierarchy "TopModule:topmodule|FuerzaBruta:algo_2|FSM:control" File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/FuerzaBruta.sv Line: 13
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/TopModule_tb.sv Line: 4
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Ignacio Carazo/Desktop/TallerDD/proyecto/output_files/AlgoritmosBusqueda.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Wed Nov 24 18:26:21 2021
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Wed Nov 24 18:59:04 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +--------------------------------------------+

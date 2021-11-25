@@ -1,5 +1,5 @@
 Flow report for AlgoritmosBusqueda
-Wed Nov 24 18:26:21 2021
+Wed Nov 24 18:59:04 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Wed Nov 24 18:26:21 2021       ;
+; Flow Status                 ; Successful - Wed Nov 24 18:59:04 2021       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; AlgoritmosBusqueda                          ;
 ; Top-level Entity Name       ; TopModule_tb                                ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2021 18:26:04 ;
+; Start date & time ; 11/24/2021 18:58:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AlgoritmosBusqueda  ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+--------------------+--------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name  ; Section Id     ;
 +-------------------------------------+----------------------------------------+--------------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 52243218829.163779996407504            ; --                 ; --           ; --             ;
+; COMPILER_SIGNATURE_ID               ; 52243218829.163780193002956            ; --                 ; --           ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                 ; --           ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>             ; --           ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --           ; --             ;
@@ -96,8 +96,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:18     ; 1.0                     ; 4777 MB             ; 00:00:23                           ;
-; Total                  ; 00:00:18     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Elaboration ; 00:00:15     ; 1.0                     ; 4776 MB             ; 00:00:18                           ;
+; Total                  ; 00:00:15     ; --                      ; --                  ; 00:00:18                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

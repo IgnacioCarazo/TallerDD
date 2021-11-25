@@ -9,7 +9,7 @@ logic [13:0]  address_texto;
 
 
 
-FSMKMP fsm(clk, rst, fin, inicio, igual, finPatron, menor0, set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto, actual_state);
+FSMKMP fsm(clk, rst, fin, inicio, igual, finPatron, menor0, sel, set_Iniciales, sumaTextoPatron, rstPatron, sumaInstancia, posPorT, sumaTexto, actual_state);
 
 
 Comparator #(14)  finTexto(14'd11064, address_texto, fin);
